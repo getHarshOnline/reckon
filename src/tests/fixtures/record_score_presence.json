@@ -1,0 +1,11 @@
+[
+  {"id": "proxy_zero", "score": {"influenceProxy": 0}, "source": "Proxy only"},
+  {"id": "proxy_positive", "score": {"influenceProxy": 0.8, "ablationDelta": null, "counterfactualDelta": null}, "source": "Proxy only"},
+  {"id": "ablation_zero", "score": {"influenceProxy": 0.8, "ablationDelta": 0}, "source": "Measurement supplied"},
+  {"id": "ablation_negative", "score": {"influenceProxy": 0.8, "ablationDelta": -0.4}, "source": "Measurement supplied"},
+  {"id": "counterfactual_zero", "score": {"influenceProxy": 0.8, "counterfactualDelta": 0}, "source": "Measurement supplied"},
+  {"id": "counterfactual_negative", "score": {"influenceProxy": 0.8, "counterfactualDelta": -0.2}, "source": "Measurement supplied"},
+  {"id": "measurement_without_proxy", "score": {"ablationDelta": 0.3}, "source": "Measurement supplied"},
+  {"id": "unscored_omitted", "score": {}, "source": "Unscored"},
+  {"id": "unscored_null", "score": {"ablationDelta": null, "counterfactualDelta": null, "influenceProxy": null}, "source": "Unscored"}
+]

@@ -1,0 +1,25 @@
+# Small executable example, not a powered policy-performance comparison.
+task: keydoor
+budget:
+  max_slots: 1
+retention_policy: measured
+experiment:
+  num_episodes: 3
+  seed: 42
+  reset_memory: false
+  learn_utility: true
+retention_probe:
+  episodes_per_arm: 1
+  reference_policy: fifo
+  sampling:
+    seed: 1000
+    n_trials: 8
+    min_trials: 2
+    max_trials: 8
+    n_permutations: 256
+    adaptive_sampling: true
+    early_stopping: true
+    alpha: 0.05
+    delta_threshold: 0.05
+    fdr_method: bonferroni
+    test_type: permutation

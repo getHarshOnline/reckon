@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Reckon"
+type: software
+authors:
+  - family-names: "Joshi"
+    given-names: "Harsh"
+    website: "https://www.getharsh.in"
+    affiliation: "RawThoughts Enterprises Private Limited"
+repository-code: "https://github.com/getHarshOnline/reckon"
+url: "https://causality.in/reckon"
+abstract: >-
+  Reckon, a laboratory for causal records under resource budgets, measures what
+  an agent with limited memory should keep: what changes outcomes for what it
+  costs, with the uncertainty shown. It has a modular Causal Memory Manager
+  library, benchmark tasks and a debugger for agent memory, for building and
+  debugging agents that must operate under limited memory, compute, bandwidth
+  and noisy observations. It measures a change as an intervention contrast, not
+  an identified causal effect.
+# Keywords synced with pyproject.toml (authoritative source)
+keywords:
+  - causal-inference
+  - memory-management
+  - resource-budgets
+  - agent-systems
+  - reinforcement-learning
+  - continual-learning
+license: Apache-2.0

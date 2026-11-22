@@ -1,0 +1,22 @@
+{
+  "notebook_name": "05_minigrid_adapter",
+  "run_mode": "paper",
+  "seed": 42,
+  "seed_count": 30,
+  "budget_slots": 30,
+  "budget_bytes": null,
+  "budget_tokens": null,
+  "task_name": "minigrid",
+  "num_episodes": 30,
+  "policy_name": "fifo",
+  "causal_weight": 0.5,
+  "eval_n_trials": 10,
+  "eval_delta_threshold": 0.05,
+  "eval_alpha": 0.05,
+  "git_hash": "6832c40",
+  "timestamp": "2026-11-14T23:53:30.363311",
+  "custom": {
+    "fixture_version": 2,
+    "controller": "masked-full-grid-fixed-corridor"
+  }
+}

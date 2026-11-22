@@ -1,0 +1,62 @@
+{
+  "name": "@rtepl/reckon-client",
+  "version": "0.1.0",
+  "description": "TypeScript client for Reckon's laboratory daemon",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./connect": {
+      "types": "./dist/connect.d.ts",
+      "import": "./dist/connect.js"
+    }
+  },
+  "scripts": {
+    "build": "pnpm generate && tsc",
+    "clean": "rm -rf dist",
+    "generate": "buf generate ../../protos --template buf.gen.yaml",
+    "prepublishOnly": "pnpm build",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "reckon",
+    "causal-memory",
+    "grpc",
+    "connectrpc",
+    "agent-memory"
+  ],
+  "author": "Harsh Joshi <hi@causality.in>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getHarshOnline/reckon"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^1.10.0",
+    "@connectrpc/connect": "1.7.0",
+    "@connectrpc/connect-node": "1.7.0",
+    "@connectrpc/connect-web": "^1.4.0"
+  },
+  "devDependencies": {
+    "@bufbuild/buf": "^1.28.0",
+    "@bufbuild/protoc-gen-es": "^1.8.0",
+    "@connectrpc/protoc-gen-connect-es": "^1.4.0",
+    "typescript": "^5.3.0"
+  },
+  "peerDependencies": {
+    "@bufbuild/protobuf": "^1.10.0",
+    "@connectrpc/connect": "^1.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+/*
+ * Reckon Debugger Design Tokens
+ * Using CSS custom properties for theming
+ */
+@theme {
+  /* Colors - Dark theme */
+  --color-bg: #1a1a2e;
+  --color-bg-secondary: #16213e;
+  --color-bg-tertiary: #0f172a;
+  --color-accent: #0f3460;
+  --color-primary: #e94560;
+  --color-primary-hover: #f25672;
+
+  --color-text: #eaeaea;
+  --color-text-muted: #a0a0a0;
+  --color-text-dim: #6b7280;
+
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* Spacing */
+  --spacing-panel: 1rem;
+  --spacing-header: 0.75rem 1.25rem;
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+
+  /* Shadows */
+  --shadow-panel: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 20px rgba(233, 69, 96, 0.3);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 200ms ease;
+}
+
+/* Tailwind's base layer supplies the reset, so spacing utilities can override it. */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* React Flow overrides */
+.react-flow__node {
+  font-size: 12px;
+}
+
+.react-flow__edge-path {
+  stroke-width: 2;
+}
+
+/* Connection status indicators */
+.status-connected {
+  color: var(--color-success);
+}
+
+.status-connecting {
+  color: var(--color-warning);
+}
+
+.status-disconnected {
+  color: var(--color-error);
+}
+
+/* Timeline CSS variables for components package */
+:root {
+  --timeline-bg: var(--color-bg);
+  --graph-edge-color: var(--color-accent);
+  --graph-grid-color: var(--color-accent);
+  --graph-minimap-bg: var(--color-bg-secondary);
+  --graph-text-muted: var(--color-text-muted);
+  --pareto-text-muted: var(--color-text-muted);
+
+  /* Edge type colors */
+  --graph-measured-edge-color: var(--color-success);
+  --graph-inferred-edge-color: var(--color-warning);
+  --graph-proxy-edge-color: var(--color-info);
+}

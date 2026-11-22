@@ -1,0 +1,13 @@
+# Fixed 5x5 key-door environment; task-created cues carry between episodes.
+task: keydoor
+description: Remember the early key colour when choosing a door.
+environment: {}
+budget:
+  max_slots: 10
+  max_bytes: 5000
+retention_policy: utility
+experiment:
+  seed: 42
+  num_episodes: 10
+  reset_memory: false
+  learn_utility: true

@@ -1,0 +1,1 @@
+export { ParetoFrontierPanel } from './ParetoFrontierPanel';

@@ -1,0 +1,63 @@
+[package]
+name = "reckon-kernel"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+rust-version = "1.75"
+authors = ["Harsh Joshi <info@causality.in>"]
+description = "Rust kernel for Reckon, a laboratory for causal records under resource budgets"
+license = "Apache-2.0"
+repository = "https://github.com/getHarshOnline/reckon"
+homepage = "https://causality.in/reckon"
+keywords = ["memory", "causal", "agent", "pyo3", "causality"]
+categories = ["algorithms", "data-structures"]
+
+[lib]
+name = "reckon_kernel"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+# PyO3 for Python bindings
+pyo3 = { version = "0.20", features = ["abi3-py39"], optional = true }
+
+# Protocol Buffers
+prost = "0.12"
+prost-types = "0.12"
+
+# High-performance data structures
+hashbrown = { version = "0.14", features = ["serde"] }
+parking_lot = "0.12"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+schemars = "=0.8.22"
+ts-rs = "=10.1.0"
+
+# Utilities
+# Keep the shared error derive within the crate's Rust 1.75 requirement.
+thiserror = "=2.0.11"
+tracing = "0.1"
+
+[build-dependencies]
+prost-build = "0.12"
+protoc-bin-vendored = "=3.3.0"
+tempfile = "=3.14.0"
+
+[dev-dependencies]
+criterion = { version = "=0.5.1", default-features = false, features = ["cargo_bench_support"] }
+
+[[bench]]
+name = "store_bench"
+harness = false
+
+[features]
+default = []
+python = ["dep:pyo3"]
+# Enable Python extension module (required for pip install)
+extension-module = ["python", "pyo3/extension-module"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3

@@ -1,0 +1,23 @@
+{
+  "notebook_name": "04_conversation_simulator",
+  "run_mode": "demo",
+  "seed": 42,
+  "seed_count": 5,
+  "budget_slots": 20,
+  "budget_bytes": null,
+  "budget_tokens": null,
+  "task_name": "conversation",
+  "num_episodes": 5,
+  "policy_name": "fifo",
+  "causal_weight": 0.5,
+  "eval_n_trials": 10,
+  "eval_delta_threshold": 0.05,
+  "eval_alpha": 0.05,
+  "git_hash": "9494e17",
+  "timestamp": "2026-11-14T23:48:37.664755",
+  "custom": {
+    "backend": "sim",
+    "fixture_version": 2,
+    "n_steps_per_episode": 8
+  }
+}

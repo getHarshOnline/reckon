@@ -1,0 +1,136 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "reckon"
+dynamic = ["version"]
+description = "Reckon's Python package: a laboratory that measures which records an agent with limited memory should keep"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Harsh Joshi", email = "hi@causality.in"}
+]
+maintainers = [
+    {name = "RawThoughts Enterprises Private Limited"}
+]
+keywords = [
+    "causal-inference",
+    "memory-management",
+    "reinforcement-learning",
+    "continual-learning",
+    "agent-systems",
+    "resource-budgets"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Rust",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.21.0",
+    "scipy>=1.7.0",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+docs = [
+    "Sphinx==8.2.3; python_version >= '3.11'",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "hypothesis>=6.0.0",
+    "jsonschema>=4.0,<5",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+    "maturin>=1.4.0",
+]
+rpc = [
+    "betterproto2[grpclib]==0.10.0",
+]
+proto = [
+    "betterproto2[grpclib]==0.10.0",
+    "betterproto2-compiler==0.10.1",
+    "grpcio-tools==1.78.0",
+    "ruff==0.17.5",
+]
+notebooks = [
+    "jupyterlab>=4.0",
+    "ipykernel>=6.0",
+    "nbclient>=0.10",
+    "nbformat>=5.0",
+    "matplotlib>=3.5",
+    "pandas>=1.5",
+]
+viz = [
+    "fastapi>=0.100.0",
+    "pydantic>=2.0.0",
+    "uvicorn[standard]>=0.22.0",
+    "websockets>=11.0.0",
+    "matplotlib>=3.5.0",
+    "plotly>=5.0.0",
+]
+full = [
+    "reckon[dev,proto,viz,notebooks]",
+]
+
+[project.urls]
+Homepage = "https://causality.in/reckon"
+Repository = "https://github.com/getHarshOnline/reckon"
+Documentation = "https://github.com/getHarshOnline/reckon/tree/main/docs"
+
+[project.scripts]
+reckon = "reckon.cli:main"
+
+[tool.maturin]
+# Python source directory
+python-source = "src"
+# Module name for the Rust extension
+module-name = "reckon._rust"
+# Path to the Rust crate
+manifest-path = "kernel/Cargo.toml"
+# Build the Python artifact with PyO3's optional extension-module link mode.
+features = ["extension-module"]
+# The kernel build compiles these sources from a source distribution too.
+include = [{ path = "protos/reckon/**/*.proto", format = "sdist" }]
+# Strip binaries for smaller size
+strip = true
+
+[tool.pytest.ini_options]
+testpaths = ["src/tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+# Wire output is verified by generator and protocol checks, not hand-edited.
+[tool.pylint.main]
+ignore-paths = ['.*src[/\\]reckon[/\\]generated[/\\].*']
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+exclude = ["src/reckon/generated"]

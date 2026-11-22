@@ -1,0 +1,27 @@
+{
+  "notebook_name": "adapter_retention_calibration",
+  "protocol": "docs/experiments/adapter-retention-calibration.md",
+  "adapters": { "conversation": 8, "minigrid": 100, "textworld": 30 },
+  "policies": [
+    "none",
+    "full",
+    "fifo",
+    "lru",
+    "random",
+    "importance",
+    "utility",
+    "diversity",
+    "measured"
+  ],
+  "budgets": [2, 4],
+  "seeds": [
+    61000, 61001, 61002, 61003, 61004, 61005, 61006, 61007, 61008, 61009, 61010,
+    61011, 61012, 61013, 61014, 61015
+  ],
+  "smoke_seed": 60001,
+  "episodes_per_seed": 1,
+  "causal_weight": 0.5,
+  "reference_policy": "fifo",
+  "pairs_per_candidate": 1,
+  "inference": "descriptive outer-seed calibration; no within-episode inference or primary hypothesis tests"
+}

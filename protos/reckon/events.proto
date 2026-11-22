@@ -1,0 +1,237 @@
+// Reckon Events Schema
+// Historical wire messages for debugger and memory events; the Rust kernel holds the laboratory's own model
+syntax = "proto3";
+
+package reckon;
+
+option java_package = "com.rtepl.causality.reckon";
+option java_multiple_files = true;
+
+import "reckon/record.proto";
+import "reckon/budget.proto";
+
+// Type of memory operation
+enum MemoryOpType {
+  MEMORY_OP_TYPE_UNSPECIFIED = 0;
+  MEMORY_OP_TYPE_WRITE = 1;
+  MEMORY_OP_TYPE_READ = 2;
+  MEMORY_OP_TYPE_PRUNE = 3;
+  MEMORY_OP_TYPE_UPDATE_SCORE = 4;
+  MEMORY_OP_TYPE_COMPRESS = 5;
+  MEMORY_OP_TYPE_BUDGET_CHECK = 6;
+}
+
+// A memory operation event logged by the CMM
+message MemoryEvent {
+  // Unique event identifier
+  string event_id = 1;
+  // Type of operation
+  MemoryOpType op_type = 2;
+  // Timestamp (step) when event occurred
+  int64 timestamp = 3;
+  // Episode identifier
+  string episode_id = 4;
+  // Record ID involved (if applicable)
+  string record_id = 5;
+  // For READ: query that was executed
+  optional string query_json = 6;
+  // For READ: IDs of records returned
+  repeated string result_ids = 7;
+  // For PRUNE: reason for pruning
+  string prune_reason = 8;
+  // For UPDATE_SCORE: type of score updated
+  string score_type = 9;
+  // For UPDATE_SCORE: old value
+  optional double old_score = 10;
+  // For UPDATE_SCORE: new value
+  optional double new_score = 11;
+  // Resource usage after this operation
+  ResourceUsage usage_after = 12;
+  // Duration of operation in microseconds
+  int64 duration_us = 13;
+}
+
+// Current resource usage snapshot
+message ResourceUsage {
+  // Number of records stored
+  int64 slot_count = 1;
+  // Total bytes used
+  int64 byte_count = 2;
+  // Total tokens used (if tracked)
+  int64 token_count = 3;
+  // Operations in current window
+  int32 ops_in_window = 4;
+}
+
+// Aggregate event for budget compliance
+message BudgetEvent {
+  // Timestamp when snapshot was taken
+  int64 timestamp = 1;
+  // Episode identifier
+  string episode_id = 2;
+  // Current budget configuration
+  MemoryBudget budget = 3;
+  // Current usage
+  ResourceUsage usage = 4;
+  // Whether currently within budget
+  bool within_budget = 5;
+  // Utilization percentage (0-1) for each dimension
+  double slot_utilization = 6;
+  double byte_utilization = 7;
+  double token_utilization = 8;
+}
+
+// Type of debugger event (higher-level than memory events)
+enum DebuggerEventType {
+  DEBUGGER_EVENT_TYPE_UNSPECIFIED = 0;
+  DEBUGGER_EVENT_TYPE_EPISODE_START = 1;
+  DEBUGGER_EVENT_TYPE_EPISODE_END = 2;
+  DEBUGGER_EVENT_TYPE_STEP = 3;
+  DEBUGGER_EVENT_TYPE_POLICY_CHANGE = 4;
+  DEBUGGER_EVENT_TYPE_BUDGET_EXCEEDED = 5;
+  DEBUGGER_EVENT_TYPE_CAUSAL_UPDATE = 6;
+  DEBUGGER_EVENT_TYPE_CHECKPOINT = 7;
+}
+
+// High-level debugger event
+message DebuggerEvent {
+  // Unique event identifier
+  string event_id = 1;
+  // Type of debugger event
+  DebuggerEventType event_type = 2;
+  // Wall-clock timestamp (Unix millis)
+  int64 wall_time_ms = 3;
+  // Episode identifier
+  string episode_id = 4;
+  // Step number within episode
+  int64 step = 5;
+  // For EPISODE_START: initial budget
+  optional MemoryBudget initial_budget = 6;
+  // For EPISODE_START: retention policy type
+  optional RetentionPolicyType retention_policy = 7;
+  // For EPISODE_END: final usage
+  optional ResourceUsage final_usage = 8;
+  // For EPISODE_END: total records written
+  optional int64 total_writes = 9;
+  // For EPISODE_END: total records pruned
+  optional int64 total_prunes = 10;
+  // For STEP: memory events in this step
+  repeated MemoryEvent memory_events = 11;
+  // For BUDGET_EXCEEDED: which dimension exceeded
+  string exceeded_dimension = 12;
+  // For POLICY_CHANGE: new policy
+  optional RetentionPolicyType new_policy = 13;
+  // For CHECKPOINT: snapshot of all current records
+  repeated MemoryRecord snapshot = 14;
+  // Additional metadata (JSON-encoded)
+  bytes metadata = 15;
+  // Sequence number for canonical ordering within (episode_id, step).
+  // Monotonically increasing counter. Part of canonical key: (episode_id, step, sequence).
+  // Wall-clock time (wall_time_ms) is display-only; sequence is authoritative for ordering.
+  optional int64 sequence = 16;
+}
+
+// Stream of events for real-time visualization
+message EventStream {
+  // Events in chronological order
+  repeated DebuggerEvent events = 1;
+  // Sequence number for this batch
+  int64 sequence = 2;
+  // Whether this is the final batch
+  bool is_final = 3;
+}
+
+// Request to subscribe to events
+message EventSubscription {
+  // Episode to subscribe to (empty for all)
+  string episode_id = 1;
+  // Only events after this step
+  optional int64 after_step = 2;
+  // Only specific event types
+  repeated DebuggerEventType event_types = 3;
+  // Include memory events within debugger events
+  bool include_memory_events = 4;
+  // Maximum events per batch
+  int32 batch_size = 5;
+}
+
+// Query for historical events
+message EventQuery {
+  // Episode identifier
+  string episode_id = 1;
+  // Start step (inclusive)
+  optional int64 from_step = 2;
+  // End step (inclusive)
+  optional int64 to_step = 3;
+  // Only specific event types
+  repeated DebuggerEventType event_types = 4;
+  // Only specific memory operation types
+  repeated MemoryOpType op_types = 5;
+  // Only events involving this record
+  optional string record_id = 6;
+  // Maximum results
+  int32 limit = 7;
+  // Offset for pagination
+  int32 offset = 8;
+}
+
+// Response to event query
+message EventQueryResult {
+  // Matching events
+  repeated DebuggerEvent events = 1;
+  // Total count (before limit/offset)
+  int64 total_count = 2;
+  // Whether more results exist
+  bool has_more = 3;
+}
+
+// Probe cost tracking for causal evaluation
+// Records compute spent on probing (ablation, intervention tests)
+message ProbeCostEvent {
+  // Unique event identifier
+  string event_id = 1;
+  // Wall-clock timestamp (Unix millis)
+  int64 wall_time_ms = 2;
+  // Episode being evaluated
+  string episode_id = 3;
+  // Record ID being probed (if single-record intervention)
+  optional string record_id = 4;
+  // Number of episodes run for this probe
+  int32 probe_episodes = 5;
+  // Number of task.run invocations
+  int32 probe_calls = 6;
+  // Total wall time spent on probe (milliseconds)
+  int64 probe_wall_time_ms = 7;
+  // Environment steps consumed (if applicable)
+  optional int64 probe_env_steps = 8;
+  // Number of records evaluated in this probe batch
+  int32 probe_records_evaluated = 9;
+  // Type of probe (ablation, counterfactual, etc.)
+  string probe_type = 10;
+  // Seed used for reproducibility
+  optional int64 seed = 11;
+}
+
+// Aggregated probe cost metrics for a complete evaluation run
+message ProbeCostSummary {
+  // Total episodes used for probing
+  int64 probe_episodes_total = 1;
+  // Total wall time for all probes (milliseconds)
+  int64 probe_wall_time_total_ms = 2;
+  // Total task.run calls for probing
+  int64 probe_calls_total = 3;
+  // Total environment steps for probing
+  int64 probe_env_steps_total = 4;
+  // Total records evaluated
+  int32 probe_records_evaluated_total = 5;
+  // Episodes per record evaluated (average)
+  double probe_episodes_per_record = 6;
+  // Wall time per record evaluated (average, ms)
+  double probe_wall_time_per_record_ms = 7;
+  // Overhead ratio: probe_time / (base_time + probe_time)
+  double probe_overhead_ratio = 8;
+  // Base task episodes (non-probe)
+  int64 base_episodes = 9;
+  // Base task wall time (milliseconds)
+  int64 base_wall_time_ms = 10;
+}

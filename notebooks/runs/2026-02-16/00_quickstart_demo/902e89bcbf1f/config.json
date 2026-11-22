@@ -1,0 +1,19 @@
+{
+  "notebook_name": "00_quickstart_demo",
+  "run_mode": "demo",
+  "seed": 42,
+  "seed_count": 1,
+  "budget_slots": 20,
+  "budget_bytes": 2000,
+  "budget_tokens": null,
+  "task_name": "keydoor",
+  "num_episodes": 1,
+  "policy_name": "causal",
+  "causal_weight": 0.5,
+  "eval_n_trials": 10,
+  "eval_delta_threshold": 0.05,
+  "eval_alpha": 0.05,
+  "git_hash": "304230f",
+  "timestamp": "2026-02-16T02:02:32.290786",
+  "custom": {}
+}

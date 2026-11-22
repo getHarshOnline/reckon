@@ -1,0 +1,11 @@
+{
+  "budget_bytes": 50000,
+  "budget_slots": 1,
+  "learn_utility": true,
+  "num_episodes": 3,
+  "policy_name": "FIFOPolicy",
+  "purpose": "small debugger export demonstration; no policy comparison or probes",
+  "reset_memory": false,
+  "seed": 42,
+  "task_name": "keydoor"
+}

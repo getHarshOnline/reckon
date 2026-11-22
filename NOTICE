@@ -1,0 +1,7 @@
+Reckon
+Copyright © 2026 RawThoughts Enterprises Private Limited.
+Author and originator: Harsh Joshi.
+
+The whole repository is licensed under Apache-2.0 (LICENSE): the kernel, the
+daemon, the Python package, the SDKs and the debugger. Third-party
+dependencies and material retain their own terms and notices.

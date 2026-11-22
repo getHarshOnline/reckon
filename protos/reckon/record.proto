@@ -1,0 +1,102 @@
+// Reckon Record Schema
+// Historical wire messages for MemoryRecord and related types; the Rust kernel holds the laboratory's own model
+syntax = "proto3";
+
+package reckon;
+
+option java_package = "com.rtepl.causality.reckon";
+option java_multiple_files = true;
+
+// Type of payload stored in a record
+enum PayloadType {
+  PAYLOAD_TYPE_UNSPECIFIED = 0;
+  PAYLOAD_TYPE_OBSERVATION = 1;
+  PAYLOAD_TYPE_ACTION = 2;
+  PAYLOAD_TYPE_REWARD = 3;
+  PAYLOAD_TYPE_CUE = 4;
+  PAYLOAD_TYPE_TRACE = 5;
+  PAYLOAD_TYPE_REPRESENTATION = 6;
+  PAYLOAD_TYPE_CUSTOM = 7;
+}
+
+// Resource cost of storing a record
+message RecordCost {
+  // Size in bytes
+  int64 bytes = 1;
+  // Token count (for LLM contexts)
+  int64 tokens = 2;
+  // Number of slots occupied
+  int32 slots = 3;
+}
+
+// Origin and creation context of a record
+message RecordOrigin {
+  // Operation that created this record
+  string source_op = 1;
+  // IDs of records this depends on
+  repeated string input_ids = 2;
+  // Content hash for deduplication (SHA256 truncated)
+  string hash = 3;
+}
+
+// Utility estimates for retention decisions
+message UtilityEstimate {
+  // Estimated downstream utility
+  double value = 1;
+  // Uncertainty in value estimate (std dev)
+  double uncertainty = 2;
+  // Last timestep this record was retrieved
+  int64 last_used = 3;
+  // Number of times retrieved
+  int32 use_count = 4;
+}
+
+// Causal influence estimates (updated post-hoc via ablation/probes)
+message CausalScore {
+  // Performance change when record is ablated
+  optional double ablation_delta = 1;
+  // Performance change under counterfactual replacement
+  optional double counterfactual_delta = 2;
+  // Gradient-based or TD-error-based influence
+  optional double influence_proxy = 3;
+  // Timestep when causal score was last computed
+  int64 last_evaluated = 4;
+}
+
+// A causal memory record stored by the Causal Memory Manager
+message MemoryRecord {
+  // Unique identifier
+  string id = 1;
+  // Step/timestep when record was created
+  int64 timestamp = 2;
+  // Episode or run identifier
+  string episode_id = 3;
+  // Type of payload
+  PayloadType payload_type = 4;
+  // The actual data (JSON-encoded bytes)
+  bytes payload = 5;
+  // Whether payload is compressed
+  bool compressed = 6;
+  // Compression encoding (gzip, zstd, lz4)
+  string encoding = 7;
+  // Resource cost
+  RecordCost cost = 8;
+  // Categorical tags
+  repeated string tags = 9;
+  // Origin context
+  RecordOrigin provenance = 10;
+  // Utility estimates
+  UtilityEstimate utility = 11;
+  // Causal influence estimates
+  CausalScore causal_score = 12;
+  // Additional user-defined metadata (JSON-encoded)
+  bytes metadata = 13;
+  // Step at which this record was created (snapshot, immutable after creation).
+  // Used for derived timeline ordering only — NOT authoritative record identity.
+  // For authoritative event ordering, use DebuggerEvent.step instead.
+  optional int64 created_at_step = 14;
+  // Sequence number at creation time (snapshot, immutable after creation).
+  // Used for derived timeline ordering only — NOT authoritative record identity.
+  // For authoritative event ordering, use DebuggerEvent.sequence instead.
+  optional int64 created_at_sequence = 15;
+}

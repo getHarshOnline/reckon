@@ -1,0 +1,4 @@
+{"budget": 5, "pairs": 20, "mean_delta": 0.5333333333333333, "p_value": 9.999000099990002e-05, "normal_interval": [0.37865665405898186, 0.6880100126076848], "adjustment": "none"}
+{"budget": 10, "pairs": 20, "mean_delta": 0.20833333333333334, "p_value": 0.004199580041995801, "normal_interval": [0.09749395762237614, 0.3191727090442905], "adjustment": "none"}
+{"budget": 15, "pairs": 20, "mean_delta": 0.0, "p_value": 1.0, "normal_interval": [0.0, 0.0], "adjustment": "none"}
+{"budget": 20, "pairs": 20, "mean_delta": 0.0, "p_value": 1.0, "normal_interval": [0.0, 0.0], "adjustment": "none"}

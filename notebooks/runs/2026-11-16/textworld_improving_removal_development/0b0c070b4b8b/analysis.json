@@ -1,0 +1,1760 @@
+{
+  "seeds": [
+    65000,
+    65001,
+    65002,
+    65003
+  ],
+  "rows": [
+    {
+      "adapter": "textworld",
+      "policy": "none",
+      "slots": null,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.4424174170126207,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 61,
+          "discards": 61,
+          "peak_slots": 1,
+          "peak_bytes": 2002,
+          "final_slots": 0
+        },
+        {
+          "writes": 64,
+          "prunes": 64,
+          "discards": 64,
+          "peak_slots": 1,
+          "peak_bytes": 1947,
+          "final_slots": 0
+        },
+        {
+          "writes": 63,
+          "prunes": 63,
+          "discards": 63,
+          "peak_slots": 1,
+          "peak_bytes": 2401,
+          "final_slots": 0
+        },
+        {
+          "writes": 65,
+          "prunes": 65,
+          "discards": 65,
+          "peak_slots": 1,
+          "peak_bytes": 1894,
+          "final_slots": 0
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "full",
+      "slots": null,
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 4,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 0.6446851249784231,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 9,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 9,
+          "peak_bytes": 5131,
+          "final_slots": 9
+        },
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 4254,
+          "final_slots": 12
+        },
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 4692,
+          "final_slots": 12
+        },
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 4070,
+          "final_slots": 12
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "fifo",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.0333070009364747,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2056,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2050,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2495,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2031,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "fifo",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.1413729180349037,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 62,
+          "prunes": 58,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3453,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2611,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3232,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2596,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "lru",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.1400042080204003,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 3311,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2050,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2495,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2031,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "lru",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.060879125026986,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 62,
+          "prunes": 58,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 4007,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2658,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3272,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2679,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "random",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.151513374003116,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2056,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2050,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2495,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2031,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "random",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "mean": 0.25,
+      "sd": 0.5,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "mean": 0.25,
+          "sd": 0.5
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "mean": 0.25,
+          "sd": 0.5
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "mean": 0.25,
+          "sd": 0.5
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "mean": 0.25,
+          "sd": 0.5
+        }
+      },
+      "successes": 1,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 0.9739914590027183,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 62,
+          "prunes": 58,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3453,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2611,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3544,
+          "final_slots": 4
+        },
+        {
+          "writes": 20,
+          "prunes": 16,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2596,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "importance",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.1383667079498991,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2056,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2050,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2495,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2031,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "importance",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.0585409569903277,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 62,
+          "prunes": 58,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3453,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2611,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3232,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2596,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "utility",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.1562534169643186,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2056,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2050,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2495,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2031,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "utility",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.0977686260594055,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 62,
+          "prunes": 58,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3453,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2611,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3232,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2596,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "diversity",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.1111353329615667,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 3311,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2452,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 3084,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2405,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "diversity",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.0578509159968235,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 62,
+          "prunes": 58,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 4041,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2611,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3232,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2596,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "measured",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 980,
+      "probe_elapsed_s": 329.96653115877416,
+      "inclusive_elapsed_s": 331.23326162510784,
+      "probe_batches": 245,
+      "record_estimates": 490,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2056,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2050,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2495,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2031,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "measured",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 1904,
+      "probe_elapsed_s": 693.4703782578581,
+      "inclusive_elapsed_s": 694.8216954180389,
+      "probe_batches": 238,
+      "record_estimates": 952,
+      "nonzero_deltas": 2,
+      "usage": [
+        {
+          "writes": 62,
+          "prunes": 58,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3453,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2611,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3232,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2596,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "measured_improving",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 980,
+      "probe_elapsed_s": 322.66989470855333,
+      "inclusive_elapsed_s": 323.8677404159098,
+      "probe_batches": 245,
+      "record_estimates": 490,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2056,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2050,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2495,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2031,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "measured_improving",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "mean": 0.25,
+      "sd": 0.5,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "mean": 0.25,
+          "sd": 0.5
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "mean": 0.25,
+          "sd": 0.5
+        },
+        "fifo": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "mean": 0.25,
+          "sd": 0.5
+        },
+        "measured": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "mean": 0.25,
+          "sd": 0.5
+        }
+      },
+      "successes": 1,
+      "main_episodes": 4,
+      "probe_episodes": 1544,
+      "probe_elapsed_s": 515.0086193289026,
+      "inclusive_elapsed_s": 516.188757832977,
+      "probe_batches": 193,
+      "record_estimates": 772,
+      "nonzero_deltas": 2,
+      "usage": [
+        {
+          "writes": 62,
+          "prunes": 58,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3453,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2611,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3232,
+          "final_slots": 4
+        },
+        {
+          "writes": 20,
+          "prunes": 16,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2596,
+          "final_slots": 4
+        }
+      ]
+    }
+  ],
+  "planning": null,
+  "primary_contrasts": [],
+  "seed_costs": [
+    {
+      "seed": 65000,
+      "games": [
+        {
+          "path": "games/65000/tw-QJU6s1FeUqU5FBUvF0-house-GP-mbRoCk7BikMvTYyE.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-mbRoCk7BikMvTYyE.z8",
+            "sha256": "19ba5ae4e8439645f2548547288845231978a2f19e4654690bc84c82d6cec737",
+            "metadata_sha256": "522cc4465ad8e83ec3a6c41bf32a5576033de1ee585c96bb3a340a8fd61d2325"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.8247748329886235,
+      "seed_elapsed_s": 458.1141412080033
+    },
+    {
+      "seed": 65001,
+      "games": [
+        {
+          "path": "games/65001/tw-QJU6s1FeUqU5FBUvF0-house-GP-XZE6cMv7hZRrIRen.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-XZE6cMv7hZRrIRen.z8",
+            "sha256": "3864d6a61e18e27cfd4aa2fda66f5c957c6000c8f415e3a656201ea8435d077c",
+            "metadata_sha256": "7a58d1f6118b1402960bafd36ab845c3e68e551dfb94ea1e03c316db3316dd6e"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.1246934999944642,
+      "seed_elapsed_s": 407.3213355829939
+    },
+    {
+      "seed": 65002,
+      "games": [
+        {
+          "path": "games/65002/tw-QJU6s1FeUqU5FBUvF0-house-GP-WkdmHvlyfxl9CDaX.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-WkdmHvlyfxl9CDaX.z8",
+            "sha256": "c3c53bee2274d0190bc701b970f6025a8824beca7a71a5bef1fac1e113bb08d2",
+            "metadata_sha256": "3d9571d69aaf9605fc2f4f3c461c7a37bb65baab8f8638265404262c1db5ed12"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.084446792025119,
+      "seed_elapsed_s": 700.6645652919542
+    },
+    {
+      "seed": 65003,
+      "games": [
+        {
+          "path": "games/65003/tw-QJU6s1FeUqU5FBUvF0-house-GP-kV80iPloTaxqhlqv.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-kV80iPloTaxqhlqv.z8",
+            "sha256": "01016395ee4c92ded9d6ba7444d740e547fa25e770a5e29b4ef0f97c32d2f3cb",
+            "metadata_sha256": "d749c0dc477b85e2fb31e4e3bb9767206e6566607448d7de4fe65f83a77fe230"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.4960645419778302,
+      "seed_elapsed_s": 320.97678054199787
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "notebook_name": "textworld_retention_diagnostic",
+  "protocol": "docs/experiments/textworld-retention-diagnostic.md",
+  "adapters": {
+    "textworld": 30
+  },
+  "policies": [
+    "none",
+    "full",
+    "fifo",
+    "lru",
+    "random",
+    "importance",
+    "utility",
+    "diversity",
+    "measured"
+  ],
+  "budgets": [2, 4],
+  "seeds": [
+    64000, 64001, 64002, 64003, 64004, 64005, 64006, 64007, 64008, 64009, 64010,
+    64011, 64012, 64013, 64014, 64015
+  ],
+  "smoke_seed": 63999,
+  "episodes_per_seed": 1,
+  "causal_weight": 0.5,
+  "reference_policy": "fifo",
+  "pairs_per_candidate": 1,
+  "inference": "descriptive outer-seed diagnostic calibration; no primary tests or confirmation claims",
+  "run_mode": "demo",
+  "purpose": "diagnostic_calibration",
+  "budget_interpretation": {
+    "2": "constrained control: normal third instruction requires goal plus two prior action records; success relies on fallback/current-observation information",
+    "4": "admits the three required records; development includes a successful removal path"
+  }
+}

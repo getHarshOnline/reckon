@@ -1,0 +1,3566 @@
+{
+  "seeds": [
+    64000,
+    64001,
+    64002,
+    64003,
+    64004,
+    64005,
+    64006,
+    64007,
+    64008,
+    64009,
+    64010,
+    64011,
+    64012,
+    64013,
+    64014,
+    64015
+  ],
+  "rows": [
+    {
+      "adapter": "textworld",
+      "policy": "none",
+      "slots": null,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 4.023857792082708,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 63,
+          "discards": 63,
+          "peak_slots": 1,
+          "peak_bytes": 1891,
+          "final_slots": 0
+        },
+        {
+          "writes": 64,
+          "prunes": 64,
+          "discards": 64,
+          "peak_slots": 1,
+          "peak_bytes": 1927,
+          "final_slots": 0
+        },
+        {
+          "writes": 61,
+          "prunes": 61,
+          "discards": 61,
+          "peak_slots": 1,
+          "peak_bytes": 2020,
+          "final_slots": 0
+        },
+        {
+          "writes": 64,
+          "prunes": 64,
+          "discards": 64,
+          "peak_slots": 1,
+          "peak_bytes": 2340,
+          "final_slots": 0
+        },
+        {
+          "writes": 61,
+          "prunes": 61,
+          "discards": 61,
+          "peak_slots": 1,
+          "peak_bytes": 2189,
+          "final_slots": 0
+        },
+        {
+          "writes": 65,
+          "prunes": 65,
+          "discards": 65,
+          "peak_slots": 1,
+          "peak_bytes": 1960,
+          "final_slots": 0
+        },
+        {
+          "writes": 63,
+          "prunes": 63,
+          "discards": 63,
+          "peak_slots": 1,
+          "peak_bytes": 1967,
+          "final_slots": 0
+        },
+        {
+          "writes": 64,
+          "prunes": 64,
+          "discards": 64,
+          "peak_slots": 1,
+          "peak_bytes": 2220,
+          "final_slots": 0
+        },
+        {
+          "writes": 61,
+          "prunes": 61,
+          "discards": 61,
+          "peak_slots": 1,
+          "peak_bytes": 2026,
+          "final_slots": 0
+        },
+        {
+          "writes": 63,
+          "prunes": 63,
+          "discards": 63,
+          "peak_slots": 1,
+          "peak_bytes": 2591,
+          "final_slots": 0
+        },
+        {
+          "writes": 64,
+          "prunes": 64,
+          "discards": 64,
+          "peak_slots": 1,
+          "peak_bytes": 2553,
+          "final_slots": 0
+        },
+        {
+          "writes": 64,
+          "prunes": 64,
+          "discards": 64,
+          "peak_slots": 1,
+          "peak_bytes": 1781,
+          "final_slots": 0
+        },
+        {
+          "writes": 63,
+          "prunes": 63,
+          "discards": 63,
+          "peak_slots": 1,
+          "peak_bytes": 2325,
+          "final_slots": 0
+        },
+        {
+          "writes": 63,
+          "prunes": 63,
+          "discards": 63,
+          "peak_slots": 1,
+          "peak_bytes": 1988,
+          "final_slots": 0
+        },
+        {
+          "writes": 63,
+          "prunes": 63,
+          "discards": 63,
+          "peak_slots": 1,
+          "peak_bytes": 2130,
+          "final_slots": 0
+        },
+        {
+          "writes": 63,
+          "prunes": 63,
+          "discards": 63,
+          "peak_slots": 1,
+          "peak_bytes": 2018,
+          "final_slots": 0
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "full",
+      "slots": null,
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 0.9375,
+      "sd": 0.25,
+      "paired": {
+        "none": {
+          "values": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 0.9375,
+          "sd": 0.25
+        }
+      },
+      "successes": 15,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 2.382702500966843,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 3922,
+          "final_slots": 12
+        },
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 3645,
+          "final_slots": 12
+        },
+        {
+          "writes": 9,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 9,
+          "peak_bytes": 4075,
+          "final_slots": 9
+        },
+        {
+          "writes": 9,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 9,
+          "peak_bytes": 4155,
+          "final_slots": 9
+        },
+        {
+          "writes": 8,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 8,
+          "peak_bytes": 4248,
+          "final_slots": 8
+        },
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 4191,
+          "final_slots": 12
+        },
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 3810,
+          "final_slots": 12
+        },
+        {
+          "writes": 42,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 42,
+          "peak_bytes": 12887,
+          "final_slots": 42
+        },
+        {
+          "writes": 65,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 65,
+          "peak_bytes": 20589,
+          "final_slots": 65
+        },
+        {
+          "writes": 10,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 10,
+          "peak_bytes": 5080,
+          "final_slots": 10
+        },
+        {
+          "writes": 7,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 7,
+          "peak_bytes": 4246,
+          "final_slots": 7
+        },
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 4055,
+          "final_slots": 12
+        },
+        {
+          "writes": 11,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 11,
+          "peak_bytes": 4133,
+          "final_slots": 11
+        },
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 4243,
+          "final_slots": 12
+        },
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 3805,
+          "final_slots": 12
+        },
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 4715,
+          "final_slots": 12
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "fifo",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0625,
+      "sd": 0.25,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0625,
+          "sd": 0.25
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0625,
+          "sd": 0.25
+        }
+      },
+      "successes": 1,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 3.624216122960206,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 1963,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2011,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2074,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2418,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2245,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2049,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2043,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2298,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2082,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2669,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2671,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 1900,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2401,
+          "final_slots": 2
+        },
+        {
+          "writes": 14,
+          "prunes": 12,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2064,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2202,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2092,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "fifo",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.1875,
+      "sd": 0.40311288741492746,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.1875,
+          "sd": 0.40311288741492746
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0625,
+          "sd": 0.25
+        }
+      },
+      "successes": 3,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 3.88969821005594,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2556,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2360,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2881,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3084,
+          "final_slots": 4
+        },
+        {
+          "writes": 61,
+          "prunes": 57,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3122,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2421,
+          "final_slots": 4
+        },
+        {
+          "writes": 16,
+          "prunes": 12,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2512,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2840,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3167,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3308,
+          "final_slots": 4
+        },
+        {
+          "writes": 7,
+          "prunes": 3,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3345,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2515,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2936,
+          "final_slots": 4
+        },
+        {
+          "writes": 14,
+          "prunes": 10,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2683,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2695,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2627,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "lru",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 3.8607337530702353,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 1963,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2011,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2751,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2418,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 3012,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2049,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2043,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2298,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 3015,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 3162,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 3142,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 1900,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2792,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2064,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2202,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2092,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "lru",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0625,
+      "sd": 0.25,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0625,
+          "sd": 0.25
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "mean": -0.0625,
+          "sd": 0.25
+        }
+      },
+      "successes": 1,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 3.585131041065324,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2574,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2382,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3193,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3098,
+          "final_slots": 4
+        },
+        {
+          "writes": 61,
+          "prunes": 57,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3549,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2453,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2532,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2858,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3627,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3308,
+          "final_slots": 4
+        },
+        {
+          "writes": 7,
+          "prunes": 3,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3345,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2578,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2936,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2703,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2713,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2645,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "random",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0625,
+      "sd": 0.25,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0625,
+          "sd": 0.25
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0625,
+          "sd": 0.25
+        }
+      },
+      "successes": 1,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 3.8802336249500513,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 1963,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2011,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2074,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2418,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2245,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2049,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2380,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2298,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2082,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2669,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2671,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2340,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2792,
+          "final_slots": 2
+        },
+        {
+          "writes": 20,
+          "prunes": 18,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2064,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2569,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2092,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "random",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.25,
+      "sd": 0.4472135954999579,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.25,
+          "sd": 0.4472135954999579
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.125,
+          "sd": 0.3415650255319866
+        }
+      },
+      "successes": 4,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 3.4714067070162855,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2586,
+          "final_slots": 4
+        },
+        {
+          "writes": 66,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2360,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2881,
+          "final_slots": 4
+        },
+        {
+          "writes": 15,
+          "prunes": 11,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3568,
+          "final_slots": 4
+        },
+        {
+          "writes": 61,
+          "prunes": 57,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3563,
+          "final_slots": 4
+        },
+        {
+          "writes": 66,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3053,
+          "final_slots": 4
+        },
+        {
+          "writes": 12,
+          "prunes": 8,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2581,
+          "final_slots": 4
+        },
+        {
+          "writes": 66,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2858,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3667,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 4109,
+          "final_slots": 4
+        },
+        {
+          "writes": 7,
+          "prunes": 3,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3559,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2578,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2936,
+          "final_slots": 4
+        },
+        {
+          "writes": 14,
+          "prunes": 10,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2683,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2695,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2645,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "importance",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 3.788152459077537,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 1963,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2011,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2074,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2418,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2245,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2049,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2043,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2298,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2082,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2669,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2671,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 1900,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2401,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2064,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2202,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2092,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "importance",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.125,
+      "sd": 0.3415650255319866,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.125,
+          "sd": 0.3415650255319866
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 2,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 5.233291999902576,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2556,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2360,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2881,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3084,
+          "final_slots": 4
+        },
+        {
+          "writes": 61,
+          "prunes": 57,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3122,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2421,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2512,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2840,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3167,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3308,
+          "final_slots": 4
+        },
+        {
+          "writes": 7,
+          "prunes": 3,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3345,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2515,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2936,
+          "final_slots": 4
+        },
+        {
+          "writes": 14,
+          "prunes": 10,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2683,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2695,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2627,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "utility",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 3.867073167930357,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 1963,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2011,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2074,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2418,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2245,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2049,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2043,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2298,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2082,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2669,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2671,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 1900,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2401,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2064,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2202,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2092,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "utility",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.125,
+      "sd": 0.3415650255319866,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.125,
+          "sd": 0.3415650255319866
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 2,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 3.8452183319604956,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2556,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2360,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2881,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3084,
+          "final_slots": 4
+        },
+        {
+          "writes": 61,
+          "prunes": 57,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3122,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2421,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2512,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2840,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3167,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3308,
+          "final_slots": 4
+        },
+        {
+          "writes": 7,
+          "prunes": 3,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3345,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2515,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2936,
+          "final_slots": 4
+        },
+        {
+          "writes": 14,
+          "prunes": 10,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2683,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2695,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2627,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "diversity",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 3.766341793932952,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2430,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2214,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2751,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2920,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 3012,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2246,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2380,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2702,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 3015,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 3162,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 3142,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2340,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2792,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2551,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2569,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2497,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "diversity",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.125,
+      "sd": 0.3415650255319866,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.125,
+          "sd": 0.3415650255319866
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 2,
+      "main_episodes": 16,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 3.7970136691001244,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2556,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2360,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3215,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3084,
+          "final_slots": 4
+        },
+        {
+          "writes": 61,
+          "prunes": 57,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3547,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2421,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2512,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2840,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3667,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3308,
+          "final_slots": 4
+        },
+        {
+          "writes": 7,
+          "prunes": 3,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3345,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2515,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2936,
+          "final_slots": 4
+        },
+        {
+          "writes": 14,
+          "prunes": 10,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2683,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2695,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2627,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "measured",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0625,
+      "sd": 0.25,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0625,
+          "sd": 0.25
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0625,
+          "sd": 0.25
+        }
+      },
+      "successes": 1,
+      "main_episodes": 16,
+      "probe_episodes": 3912,
+      "probe_elapsed_s": 1024.3771866660682,
+      "inclusive_elapsed_s": 1028.3184781248565,
+      "probe_batches": 978,
+      "record_estimates": 1956,
+      "nonzero_deltas": 1,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 1963,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2011,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2074,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2418,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2245,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2049,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2043,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2298,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2082,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2669,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2671,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 1900,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2401,
+          "final_slots": 2
+        },
+        {
+          "writes": 64,
+          "prunes": 62,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2064,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2202,
+          "final_slots": 2
+        },
+        {
+          "writes": 63,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2092,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "measured",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.1875,
+      "sd": 0.40311288741492746,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.1875,
+          "sd": 0.40311288741492746
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0625,
+          "sd": 0.25
+        }
+      },
+      "successes": 3,
+      "main_episodes": 16,
+      "probe_episodes": 6760,
+      "probe_elapsed_s": 1799.583639001241,
+      "inclusive_elapsed_s": 1803.5172809599899,
+      "probe_batches": 845,
+      "record_estimates": 3380,
+      "nonzero_deltas": 7,
+      "usage": [
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2556,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2360,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2881,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3084,
+          "final_slots": 4
+        },
+        {
+          "writes": 61,
+          "prunes": 57,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3122,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2421,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2512,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2840,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3167,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3308,
+          "final_slots": 4
+        },
+        {
+          "writes": 7,
+          "prunes": 3,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3345,
+          "final_slots": 4
+        },
+        {
+          "writes": 64,
+          "prunes": 60,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2515,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2936,
+          "final_slots": 4
+        },
+        {
+          "writes": 14,
+          "prunes": 10,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2683,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2695,
+          "final_slots": 4
+        },
+        {
+          "writes": 63,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2627,
+          "final_slots": 4
+        }
+      ]
+    }
+  ],
+  "planning": null,
+  "primary_contrasts": [],
+  "seed_costs": [
+    {
+      "seed": 64000,
+      "games": [
+        {
+          "path": "games/64000/tw-QJU6s1FeUqU5FBUvF0-house-GP-eWV3iyJatDkqIBle.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-eWV3iyJatDkqIBle.z8",
+            "sha256": "da3583ea28fd9fa0ccebec6a76b15ffffa267a86e1faeef2da2f93aabf424e33",
+            "metadata_sha256": "c6d2bc317f8cc1e07d3f65dd1c503d81eaf3195e586cd1540618a42af2735c33"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.3337385409977287,
+      "seed_elapsed_s": 196.2871857919963
+    },
+    {
+      "seed": 64001,
+      "games": [
+        {
+          "path": "games/64001/tw-QJU6s1FeUqU5FBUvF0-house-GP-XNrmuyjnhN0rcljQ.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-XNrmuyjnhN0rcljQ.z8",
+            "sha256": "2a96f76384cbd280cfdb4f928e9f6950f8bd91ceb4f95ea370bd3bfb3220f5ec",
+            "metadata_sha256": "cf691f6e9f5ffa9038b6827914e01d47dee49e8152fb6afecdd277bb3695ee3c"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.0662897079600953,
+      "seed_elapsed_s": 195.65066870802548
+    },
+    {
+      "seed": 64002,
+      "games": [
+        {
+          "path": "games/64002/tw-QJU6s1FeUqU5FBUvF0-house-GP-NYZocqKMtnd0FnRE.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-NYZocqKMtnd0FnRE.z8",
+            "sha256": "8448b028294fa158ee758838962ab642492e3cf72290e405f3d8640ded3e8d3c",
+            "metadata_sha256": "92b77d4b76c5d62a18a8596903e47d701cc473134d9ce5855bb597ab454a1702"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 0.9252908749622293,
+      "seed_elapsed_s": 184.3798728749971
+    },
+    {
+      "seed": 64003,
+      "games": [
+        {
+          "path": "games/64003/tw-QJU6s1FeUqU5FBUvF0-house-GP-7XGbFrLbUGlkCpqm.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-7XGbFrLbUGlkCpqm.z8",
+            "sha256": "600bfbd666b106e14dfda6e3b327c660deee6dde26cf37d7da6c9a65523cebb3",
+            "metadata_sha256": "ef0759ce07af725eef986b72019e879a6db6afc8ca60ebcaa854c1404921adaf"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 0.9508566670119762,
+      "seed_elapsed_s": 197.69718833302613
+    },
+    {
+      "seed": 64004,
+      "games": [
+        {
+          "path": "games/64004/tw-QJU6s1FeUqU5FBUvF0-house-GP-Y70Fjn6CKgMCe65.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-Y70Fjn6CKgMCe65.z8",
+            "sha256": "2d991212f662ab3b4fb15e4b6a9977359f1f42ce2d682d68593a612b09004de3",
+            "metadata_sha256": "310aec9156c5b3a135779059e4fbc724bb7fdf8360ee346e962dfdc3e682dd9b"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.0545990000246093,
+      "seed_elapsed_s": 184.86447504203534
+    },
+    {
+      "seed": 64005,
+      "games": [
+        {
+          "path": "games/64005/tw-QJU6s1FeUqU5FBUvF0-house-GP-ZbmWilW3sBJ5s5be.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-ZbmWilW3sBJ5s5be.z8",
+            "sha256": "5a731488f33a8c7aca1f0fecc9c34ae9f596dddee58b72c25626c176cf996805",
+            "metadata_sha256": "8c7dab55a9e9494d21c52384eefe47a86f3fa808ce4551bb8bd07e3035dc3c8e"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 0.9989443329977803,
+      "seed_elapsed_s": 202.98892029200215
+    },
+    {
+      "seed": 64006,
+      "games": [
+        {
+          "path": "games/64006/tw-QJU6s1FeUqU5FBUvF0-house-GP-eP5xH2K3FEZ0u8gB.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-eP5xH2K3FEZ0u8gB.z8",
+            "sha256": "4d7644702e3bf281b059a12369a8364dbf2dc8e40138ceddc53a33aab9ee33a1",
+            "metadata_sha256": "3e29b77f697a206a938160ecaca1f740045ccb5d998801aca789c29643ccfa1b"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.0054259579628706,
+      "seed_elapsed_s": 171.33203279098962
+    },
+    {
+      "seed": 64007,
+      "games": [
+        {
+          "path": "games/64007/tw-QJU6s1FeUqU5FBUvF0-house-GP-LgQ0tbddUadEHjeV.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-LgQ0tbddUadEHjeV.z8",
+            "sha256": "d6eb9712e6f5e2f27a3488bc17da7b09e6342cfb8a35d3afcb984f3fcf9810ca",
+            "metadata_sha256": "a315da511203f558c066d94fcc371f63df43ad918819fb230187a662f5a19b7e"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.0847319170134142,
+      "seed_elapsed_s": 207.09731904201908
+    },
+    {
+      "seed": 64008,
+      "games": [
+        {
+          "path": "games/64008/tw-QJU6s1FeUqU5FBUvF0-house-GP-QjmOU20vcXjaf72M.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-QjmOU20vcXjaf72M.z8",
+            "sha256": "14a3a8ce38d23a7414e5041a863f940fa7d61f3ed2e36eafee617a7d6f81b2e3",
+            "metadata_sha256": "c024d9396a275c3aacc1d8e65e6edb293325b7e7d7598b511d3fa7a3f39ce34b"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.5035934580373578,
+      "seed_elapsed_s": 214.92261991702253
+    },
+    {
+      "seed": 64009,
+      "games": [
+        {
+          "path": "games/64009/tw-QJU6s1FeUqU5FBUvF0-house-GP-knYas1xyijy8tm9J.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-knYas1xyijy8tm9J.z8",
+            "sha256": "a42bb55d692f23a869862bb2a6ffd79927b9cb12a73cd0cae2ac94f8b36a2d46",
+            "metadata_sha256": "2a8805cdeb4d24814ff6c9a879208d30ef04c47bda676f9619a7c91df383ae68"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.0515004580374807,
+      "seed_elapsed_s": 200.15710070804926
+    },
+    {
+      "seed": 64010,
+      "games": [
+        {
+          "path": "games/64010/tw-QJU6s1FeUqU5FBUvF0-house-GP-D79kUPd0I6Lmt3PO.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-D79kUPd0I6Lmt3PO.z8",
+            "sha256": "e73b1d304e1ea9934300efa8dbe0f3d7fed3bf1b770343e71fa9b857e8e1095c",
+            "metadata_sha256": "573848c3937a9715bf20997407c44357247f5e4f22451bc075adef57c2ef53ff"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.0395944580086507,
+      "seed_elapsed_s": 73.122058958048
+    },
+    {
+      "seed": 64011,
+      "games": [
+        {
+          "path": "games/64011/tw-QJU6s1FeUqU5FBUvF0-house-GP-EPJPT1MatlyPH98Z.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-EPJPT1MatlyPH98Z.z8",
+            "sha256": "9521e1e763cf33822bfbbb60169541b764c2105074ade6029e63c5cc4f37567a",
+            "metadata_sha256": "498c2872955cdb8113e8077701c2c2d6faa4ea98a8491b250002d98f8eedaa72"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.064253667020239,
+      "seed_elapsed_s": 204.76195225003175
+    },
+    {
+      "seed": 64012,
+      "games": [
+        {
+          "path": "games/64012/tw-QJU6s1FeUqU5FBUvF0-house-GP-e97ruNGZT6V8U3yZ.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-e97ruNGZT6V8U3yZ.z8",
+            "sha256": "8fe799a132998d98554324cdc5d7a89f8ef56c6424c41f15dd5be9bb8c032d95",
+            "metadata_sha256": "6c2710ba55cd05471ae677c6ef12315282f583f8402d9441bfe8b091048652f5"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.0211205829982646,
+      "seed_elapsed_s": 194.94235120801022
+    },
+    {
+      "seed": 64013,
+      "games": [
+        {
+          "path": "games/64013/tw-QJU6s1FeUqU5FBUvF0-house-GP-QljLCoDVU32Biea.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-QljLCoDVU32Biea.z8",
+            "sha256": "81c6869a46fc7e8ecb40218522ee97bf08630fe7764a3792eca384ffae8e23a3",
+            "metadata_sha256": "9de4f4d0ef70091240ebab03bb5edd7d6104a8b8b08543519dd6d84a75bc59d8"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.0432066249777563,
+      "seed_elapsed_s": 68.46189262502594
+    },
+    {
+      "seed": 64014,
+      "games": [
+        {
+          "path": "games/64014/tw-QJU6s1FeUqU5FBUvF0-house-GP-kd8MFv0PcJMNf16D.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-kd8MFv0PcJMNf16D.z8",
+            "sha256": "29208c0646ce11b90881d705fbbe0d076fd9cd3ae9f3e6c58e9f03f2f179bba5",
+            "metadata_sha256": "b85571f5cfa4d3e6e7e4cfa711d5014d27fec694e3c7ea3b708c85c0bc49faa6"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.4799960420350544,
+      "seed_elapsed_s": 212.91227324999636
+    },
+    {
+      "seed": 64015,
+      "games": [
+        {
+          "path": "games/64015/tw-QJU6s1FeUqU5FBUvF0-house-GP-MR88ul0lIR67tLJ6.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-MR88ul0lIR67tLJ6.z8",
+            "sha256": "ea46efcd9023a49848ea9128d5392876305220fa0247d1d6f3365ea10e0b6c0d",
+            "metadata_sha256": "449ccff04cd09aa3b573a1dfebddc928ee73ca3ea4cb0df8fa38b9de8c1c2227"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.083625666971784,
+      "seed_elapsed_s": 193.2367960420088
+    }
+  ]
+}

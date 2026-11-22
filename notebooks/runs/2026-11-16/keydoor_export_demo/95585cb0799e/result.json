@@ -1,0 +1,59 @@
+{
+  "diagnostics": {
+    "key_retrievals_per_query": 1.0,
+    "successful_key_episodes_per_write": 0.6666666666666666,
+    "successful_stored_key_episode_fraction": 0.6666666666666666
+  },
+  "memory": {},
+  "performance": {
+    "mean_return": 0.6666666666666666,
+    "success_rate": 0.6666666666666666
+  },
+  "raw_data": {
+    "episodes": [
+      {
+        "correct_door": [
+          3,
+          3
+        ],
+        "key_color": "green",
+        "key_retrieved": true,
+        "key_stored": true,
+        "reads": 1,
+        "retrieved_color": "green",
+        "success": false,
+        "writes": 1
+      },
+      {
+        "correct_door": [
+          3,
+          3
+        ],
+        "key_color": "blue",
+        "key_retrieved": true,
+        "key_stored": true,
+        "reads": 1,
+        "retrieved_color": "blue",
+        "success": true,
+        "writes": 1
+      },
+      {
+        "correct_door": [
+          3,
+          3
+        ],
+        "key_color": "blue",
+        "key_retrieved": true,
+        "key_stored": true,
+        "reads": 1,
+        "retrieved_color": "blue",
+        "success": true,
+        "writes": 1
+      }
+    ],
+    "learn_utility": true,
+    "reset_memory": false,
+    "total_reads": 3,
+    "total_writes": 3
+  }
+}

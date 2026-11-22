@@ -1,0 +1,70 @@
+// Reckon Budget and Resource Schema
+// Historical wire messages for resource constraints; the laboratory's own model is the Python
+// resource configuration in src/reckon/core/resources.py
+syntax = "proto3";
+
+package reckon;
+
+option java_package = "com.rtepl.causality.reckon";
+option java_multiple_files = true;
+
+// Multi-dimensional resource constraint vector
+// Defines the operational limits for an agent
+message ResourceVector {
+  // Maximum number of memory slots
+  optional int64 memory_slots = 1;
+  // Maximum memory in bytes
+  optional int64 memory_bytes = 2;
+  // Maximum memory in tokens
+  optional int64 memory_tokens = 3;
+  // Maximum bandwidth (ops/step)
+  optional double bandwidth = 4;
+  // Maximum compute per step
+  optional double compute = 5;
+  // Irreducible noise level (ε_noise)
+  double noise_floor = 6;
+}
+
+// Memory-specific budget for the Causal Memory Manager
+message MemoryBudget {
+  // Maximum number of records to store
+  int64 max_slots = 1;
+  // Maximum total bytes
+  optional int64 max_bytes = 2;
+  // Maximum total tokens
+  optional int64 max_tokens = 3;
+  // Write rate limit (per window)
+  optional int32 max_write_ops_per_window = 4;
+  // Read rate limit (per window)
+  optional int32 max_read_ops_per_window = 5;
+  // Window size for rate limiting (in steps)
+  int32 window_size = 6;
+}
+
+// Retention policy types
+enum RetentionPolicyType {
+  RETENTION_POLICY_TYPE_UNSPECIFIED = 0;
+  RETENTION_POLICY_TYPE_FIFO = 1;
+  RETENTION_POLICY_TYPE_LRU = 2;
+  RETENTION_POLICY_TYPE_UTILITY = 3;
+  RETENTION_POLICY_TYPE_EVIDENCE_PER_BYTE = 4;
+  RETENTION_POLICY_TYPE_DIVERSITY = 5;
+}
+
+// Configuration for the Causal Memory Manager
+message MemoryManagerConfig {
+  // Memory budget constraints
+  MemoryBudget budget = 1;
+  // Retention policy to use
+  RetentionPolicyType retention_policy = 2;
+  // For evidence-per-byte retention: supplied effect or proxy weight vs utility (0-1)
+  double evidence_weight = 3;
+  // Episode identifier
+  string episode_id = 4;
+  // Enable deduplication via content hashing
+  bool enable_dedup = 5;
+  // Enable compression for payloads above this size (bytes)
+  optional int64 compression_threshold = 6;
+  // Compression algorithm
+  string compression_algorithm = 7;
+}

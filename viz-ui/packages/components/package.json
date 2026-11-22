@@ -1,0 +1,73 @@
+{
+  "name": "@rtepl/reckon-components",
+  "version": "0.1.0",
+  "description": "Stateless chart components for Reckon's debugger, such as its event timeline and Pareto frontier",
+  "author": "Harsh Joshi <hi@causality.in>",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./timeline": {
+      "types": "./dist/timeline/index.d.ts",
+      "import": "./dist/timeline/index.js"
+    },
+    "./causal-graph": {
+      "types": "./dist/causal-graph/index.d.ts",
+      "import": "./dist/causal-graph/index.js"
+    },
+    "./pareto-frontier": {
+      "types": "./dist/pareto-frontier/index.d.ts",
+      "import": "./dist/pareto-frontier/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "node ../../scripts/generate-records.mjs && vite build && tsc --emitDeclarationOnly",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "typecheck": "node ../../scripts/generate-records.mjs && tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist node_modules"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.4.0",
+    "plotly.js-dist-min": "^2.35.0",
+    "react-plotly.js": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-plotly.js": "^2.6.3",
+    "@vitejs/plugin-react": "^4.3.0",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0",
+    "vite-plugin-dts": "^4.4.0",
+    "vitest": "^2.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getHarshOnline/reckon",
+    "directory": "viz-ui/packages/components"
+  },
+  "keywords": [
+    "timeline",
+    "causal-graph",
+    "pareto",
+    "visualization",
+    "react",
+    "canvas"
+  ]
+}

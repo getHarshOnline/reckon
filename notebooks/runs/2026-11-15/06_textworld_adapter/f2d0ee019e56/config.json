@@ -1,0 +1,22 @@
+{
+  "notebook_name": "06_textworld_adapter",
+  "run_mode": "paper",
+  "seed": 42,
+  "seed_count": 15,
+  "budget_slots": 25,
+  "budget_bytes": null,
+  "budget_tokens": null,
+  "task_name": "textworld",
+  "num_episodes": 15,
+  "policy_name": "fifo",
+  "causal_weight": 0.5,
+  "eval_n_trials": 10,
+  "eval_delta_threshold": 0.05,
+  "eval_alpha": 0.05,
+  "git_hash": "6832c40",
+  "timestamp": "2026-11-15T00:03:43.911259",
+  "custom": {
+    "policy_backend": "scripted",
+    "fixture_version": 2
+  }
+}

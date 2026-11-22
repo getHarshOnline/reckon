@@ -1,0 +1,2206 @@
+[
+  {
+    "record_id": "key_record",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 0.0,
+    "delta": 1.0,
+    "n_trials": 10,
+    "p_value": 0.001953125,
+    "is_significant": true,
+    "is_useful": true,
+    "trials": [
+      {
+        "seed": 42,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "55f6b11e-4ea8-47b2-a2f2-6b04874185b2",
+          "target_sha256": "2ac09b864da463a9e6563df57f9a62acfc177ac7dea4371e166f592820462aee",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "46279149-7444-4927-83dd-535f77a4faab",
+          "target_sha256": "2ac09b864da463a9e6563df57f9a62acfc177ac7dea4371e166f592820462aee",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 43,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "d737b561-f602-4ad2-b97c-e52e102580b5",
+          "target_sha256": "4fa572c454b9b21079360339853d1e480a79c5da8470c24e4c1f379c1d911484",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "ae14209f-f477-4aa5-a43c-78e18ad714f9",
+          "target_sha256": "4fa572c454b9b21079360339853d1e480a79c5da8470c24e4c1f379c1d911484",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 44,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "1fa5fda3-a8f4-4201-9f4f-d489aadb75f6",
+          "target_sha256": "fefc6ec13b626d2374434e072a510a50608041dac8922e4f244c157174ad525f",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "159bbff8-a9ec-40ff-a24e-b510a9d617d6",
+          "target_sha256": "fefc6ec13b626d2374434e072a510a50608041dac8922e4f244c157174ad525f",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 45,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "ad237a95-c53f-41fc-b904-71a06d92e467",
+          "target_sha256": "fefc6ec13b626d2374434e072a510a50608041dac8922e4f244c157174ad525f",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "1cbe9a25-1524-482c-85e7-1fa8ea2ce165",
+          "target_sha256": "fefc6ec13b626d2374434e072a510a50608041dac8922e4f244c157174ad525f",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 46,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "a2b01b91-39e7-4c9b-820f-9eefc43f81a8",
+          "target_sha256": "4fa572c454b9b21079360339853d1e480a79c5da8470c24e4c1f379c1d911484",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "a85f413a-3460-4145-a6ce-f22fc1d39f43",
+          "target_sha256": "4fa572c454b9b21079360339853d1e480a79c5da8470c24e4c1f379c1d911484",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 47,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "2895e0d6-2f74-4b8d-862b-8d5f15004dfe",
+          "target_sha256": "fefc6ec13b626d2374434e072a510a50608041dac8922e4f244c157174ad525f",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "57b28f5c-8fd8-48e9-9496-12ddb7457716",
+          "target_sha256": "fefc6ec13b626d2374434e072a510a50608041dac8922e4f244c157174ad525f",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 48,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "cfdfacb6-2c0a-40a9-9571-7adbc73ad567",
+          "target_sha256": "2ac09b864da463a9e6563df57f9a62acfc177ac7dea4371e166f592820462aee",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "97275daf-23c0-44a8-99d5-6be3457ea9f3",
+          "target_sha256": "2ac09b864da463a9e6563df57f9a62acfc177ac7dea4371e166f592820462aee",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 49,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "45ee163f-d59e-4e97-a2bf-e9a69bb90f10",
+          "target_sha256": "4fa572c454b9b21079360339853d1e480a79c5da8470c24e4c1f379c1d911484",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "dd017967-96f8-4d70-a02f-a5e198420f6f",
+          "target_sha256": "4fa572c454b9b21079360339853d1e480a79c5da8470c24e4c1f379c1d911484",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 50,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "ad4bcfb1-3181-4553-be63-a6db2c641b9b",
+          "target_sha256": "fefc6ec13b626d2374434e072a510a50608041dac8922e4f244c157174ad525f",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "f95986cf-6a6f-4421-8e83-f53569799573",
+          "target_sha256": "fefc6ec13b626d2374434e072a510a50608041dac8922e4f244c157174ad525f",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 51,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "19a662a4-202a-45a5-ae71-61b5497ccc84",
+          "target_sha256": "4fa572c454b9b21079360339853d1e480a79c5da8470c24e4c1f379c1d911484",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "557b845c-f433-4c5d-bb9a-83487e3d8b97",
+          "target_sha256": "4fa572c454b9b21079360339853d1e480a79c5da8470c24e4c1f379c1d911484",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "key",
+    "probe_episodes": 20,
+    "probe_elapsed_s": 0.015059457975439727
+  },
+  {
+    "record_id": "distractor_0",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 1.0,
+    "delta": 0.0,
+    "n_trials": 10,
+    "p_value": 1.0,
+    "is_significant": false,
+    "is_useful": false,
+    "trials": [
+      {
+        "seed": 42,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "4f70cdae-815f-40bd-9f7f-e9b4cd48a76b",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "1e619b74-2d7e-44fb-a0c7-1cdcd144afd5",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 43,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "5698c64f-139a-476c-9877-7e016ffb9031",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "4894f48a-60c7-4987-8ed4-61741dcfe679",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 44,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "5b98b7d7-1830-4cbb-9d9e-4ecaa74c50ef",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "8ce54b06-b17b-4503-b335-13de5b3b9546",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 45,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "f533f2b0-131d-4907-9aee-c544916ecc3f",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "e5c636f0-309e-4460-9403-5a1d55e64eba",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 46,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "5124a2f8-31e3-46cf-97ad-22112b807aaa",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "bb3943f9-fb63-45a4-ba25-96e0f8c57bb4",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 47,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "b04e3639-7be1-44fc-8134-f689049bacd8",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "c0400fc2-17c7-4775-9925-82b181932283",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 48,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "59527fc1-5375-4447-982c-f91c165cccc4",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "bd16ad0a-78fc-43e9-85f4-e39a8fc3a615",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 49,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "f00b51fd-6f86-4a96-84bd-66f307b0d37b",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "59806365-55a1-4e5a-8be9-b7a2b8b72571",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 50,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "54990d5b-0bcf-41c1-8a7a-6fd045e2965d",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "6a123bbc-7795-4c25-bfcb-799432aedd6a",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 51,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "39ac162e-1b9d-4196-b275-c6517d7e2bd0",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "bca17600-4434-4c75-b784-ca3088bbbd74",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "key",
+    "probe_episodes": 20,
+    "probe_elapsed_s": 0.014920332992915064
+  },
+  {
+    "record_id": "distractor_1",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 1.0,
+    "delta": 0.0,
+    "n_trials": 10,
+    "p_value": 1.0,
+    "is_significant": false,
+    "is_useful": false,
+    "trials": [
+      {
+        "seed": 42,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "3e683636-5a2e-4088-b68c-305a2956cad2",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "d4d60220-9ccf-4f63-9f80-426949b2b38d",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 43,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "8a065e55-59ee-49db-a41c-15b8a96dfd3e",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "269bb7a6-63e5-42c5-abd1-42c78119e9bd",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 44,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "b224c13a-c20f-48be-af17-78839613eb1d",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "835f234f-9f10-438c-96c6-cbbde52fe082",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 45,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "683b172c-122e-4472-97e4-e13ffffb46dd",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "4bcdb9b4-4ef5-41d1-a21d-6f2d5819e772",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 46,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "74ed98b9-3d79-48af-8a35-f21a61eb4735",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "2b19b006-684e-4f50-a308-e780f12e6ab2",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 47,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "b8f29b50-83e9-46f6-94d9-8a5dc1d19bd6",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "fbb9ee66-7ecf-4c9a-a5f5-e9c756c78093",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 48,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "4ea3ed1b-956d-43b9-9e42-79ffa6283e75",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "376437c1-30b9-4d63-b2e1-734ba104f902",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 49,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "3af66d47-97b5-40e5-a0c8-6a517fcf3b32",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "567fbadb-7515-4753-bf0a-bf3d3789437c",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 50,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "cd411e71-9a24-466f-93e8-c92d093d5bca",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "a8c971a9-1d03-4bef-b079-39eaaff3adf3",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 51,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "af725c42-898d-49d5-a2e9-308d22c61f41",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "e59dfe5a-def5-42de-a969-307c9ad7dcfa",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "key",
+    "probe_episodes": 20,
+    "probe_elapsed_s": 0.012795249989721924
+  },
+  {
+    "record_id": "distractor_2",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 1.0,
+    "delta": 0.0,
+    "n_trials": 10,
+    "p_value": 1.0,
+    "is_significant": false,
+    "is_useful": false,
+    "trials": [
+      {
+        "seed": 42,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "83c68325-51bb-42f8-917e-cc4181e8b79b",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "7a13bd67-f1ab-4be7-b84b-5ac0312f42e4",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 43,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "326e4233-3eb6-4c86-ab9c-36b556a8bdb8",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "3a8d4cd2-5226-45a5-9376-8c720817b2f2",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 44,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "463c4b24-62bd-4317-9106-328111bfb6a7",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "6ae3a510-ff5a-4eca-9c8e-18b03c05a094",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 45,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "e6a44ba7-51e0-4a7c-83be-ba35f20c709c",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "4e27dca4-33a3-4614-8db6-3d540e66688c",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 46,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "f3368677-685a-40eb-a13a-f80c6dfdf07c",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "96b94e97-bfec-4258-a4f2-a795672d8231",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 47,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "d1e76ff1-08a1-46e3-974e-4388a9b4d7d9",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "b054813f-53f0-4012-bc1a-e58c43ed8f16",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 48,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "c77589e2-2c4f-4fc8-873d-17c2c3617e16",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "56c93ec7-84bf-4e6a-8033-357b19ae6f34",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 49,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "b7e0831c-c651-4df0-88c5-7e30a6a3b42d",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "32b8bc79-bf15-4b2f-9ee2-60d474d6e3c8",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 50,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "189f7f1e-1f05-46de-bacb-87ec829d1369",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "6da5c121-18dd-4b64-b39a-96fcd45ff194",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 51,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "9be1ba64-063d-44ed-a532-619840444338",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "61a86a48-d70a-40b4-abc4-4972a245d64c",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "key",
+    "probe_episodes": 20,
+    "probe_elapsed_s": 0.013376582995988429
+  },
+  {
+    "record_id": "distractor_3",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 1.0,
+    "delta": 0.0,
+    "n_trials": 10,
+    "p_value": 1.0,
+    "is_significant": false,
+    "is_useful": false,
+    "trials": [
+      {
+        "seed": 42,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "c29b9220-2edc-4c1a-b333-6320b2b43998",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "94224c0e-4d36-4566-bdb4-a414b8ee70e9",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 43,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "13528d19-e069-44b0-aa0c-27f806d0ac5f",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "d95d9bf9-b3cd-4e03-b9c0-21777bf9642d",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 44,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "bb615119-81be-4017-ad7d-5438a5d7f62a",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "4c1491fb-6c1d-4430-8af0-1c8ff806e150",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 45,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "f1ab7d9a-068b-49cc-8b28-7ee35a97da04",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "71e716c3-4ce7-4c4d-b083-962e5b349e32",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 46,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "8205257e-a9cc-42cb-bfaf-3770a18ab701",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "142a3a57-7bf5-4398-9fa1-5908ad3e9401",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 47,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "bc10b64d-ddc8-41d7-9380-6484698eb2ae",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "c561aea4-56b3-478c-9ebc-dbe8f3be916f",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 48,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "835826d9-c8cb-4385-b69c-7e78bfa78e9a",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "8aaaa163-9f33-40cb-9c5d-cbaedaf19e69",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 49,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "0b97ebb2-f3a9-43e8-8061-daa978737331",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "85c12da5-b56d-4a91-aec4-72420f000601",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 50,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "116d0620-4fd0-481d-be08-b831744a1f86",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "74031629-b72f-42b3-a333-73f61ed938f1",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 51,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "d4cfedaf-bca8-4d18-8ead-3ba01abd4997",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "bf4fd32f-43dc-4c57-9d59-fe283a178ae2",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "key",
+    "probe_episodes": 20,
+    "probe_elapsed_s": 0.012329209013842046
+  },
+  {
+    "record_id": "distractor_4",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 1.0,
+    "delta": 0.0,
+    "n_trials": 10,
+    "p_value": 1.0,
+    "is_significant": false,
+    "is_useful": false,
+    "trials": [
+      {
+        "seed": 42,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "37dee70e-5fb4-4fd8-a325-5628152e6904",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "7902f0f5-d729-4ffb-9651-1a0a4dc011c5",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 43,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "caf43ba2-8c7b-4352-b997-d9dec2881ddd",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "9a6c3421-598d-41ba-8f03-235e78bb3963",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 44,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "5c74a059-0790-40c9-a42b-996ef2e682c6",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "e5ddf795-98e1-4620-bc00-c71dde84ae58",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 45,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "f95fc02c-31b1-45b3-86e5-6b5209181b18",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "858c2a27-cadd-4fa0-9e4d-05e1903e3274",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 46,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "98fe43ee-3a64-4eef-8cf9-908bd65ec2cc",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "c1807dc3-0cef-4c64-96a4-102d09b8ef17",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 47,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "679c6b52-f355-4937-9ed7-9a586ff279ee",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "bcabb0cc-af18-4ad9-b68b-6bf73e89b49c",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 48,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "4da0ebeb-ebf0-496d-9784-e6e1eb9f88c5",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "fac423db-6648-4ed6-ba26-9f5e2bea5631",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 49,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "852153b3-58ae-4322-933f-89e9859ce022",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "ee73538d-a70d-43c5-b847-ecb5af04a3a6",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 50,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "28f8e82a-56aa-48a0-b89c-230e2837a754",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "d3b2f017-302d-4faa-a887-9143b355a2a6",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 51,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "4b6d6ce1-ac8e-46fa-aae6-9430599d602d",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "2e410eb0-d493-497c-a26f-9491cf53f6bc",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "key",
+    "probe_episodes": 20,
+    "probe_elapsed_s": 0.01384229096584022
+  },
+  {
+    "record_id": "key_record",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 0.0,
+    "delta": 1.0,
+    "n_trials": 5,
+    "p_value": 0.0625,
+    "is_significant": false,
+    "is_useful": false,
+    "trials": [
+      {
+        "seed": 42,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "bdf7124e-730e-485b-b28a-fb3f1a36205c",
+          "target_sha256": "2ac09b864da463a9e6563df57f9a62acfc177ac7dea4371e166f592820462aee",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "0dcd1362-b670-4ed1-b55d-2cc9c62edce4",
+          "target_sha256": "2ac09b864da463a9e6563df57f9a62acfc177ac7dea4371e166f592820462aee",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 43,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "119d79f9-41c4-42c4-a244-abd15e3cec89",
+          "target_sha256": "4fa572c454b9b21079360339853d1e480a79c5da8470c24e4c1f379c1d911484",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "87596ab6-a5bc-4834-a5f5-1baf5e88b2f6",
+          "target_sha256": "4fa572c454b9b21079360339853d1e480a79c5da8470c24e4c1f379c1d911484",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 44,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "bd886121-4223-48ef-994f-76e63bcf3724",
+          "target_sha256": "fefc6ec13b626d2374434e072a510a50608041dac8922e4f244c157174ad525f",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "849628b1-1730-4c2d-9781-d59b732b8100",
+          "target_sha256": "fefc6ec13b626d2374434e072a510a50608041dac8922e4f244c157174ad525f",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 45,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "2bec8e85-69ef-41d8-9f5c-6ea9f10b637d",
+          "target_sha256": "fefc6ec13b626d2374434e072a510a50608041dac8922e4f244c157174ad525f",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "76120b87-7e22-4c6d-bfee-5a471e1e4a8a",
+          "target_sha256": "fefc6ec13b626d2374434e072a510a50608041dac8922e4f244c157174ad525f",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 46,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "9b13e7b5-f064-46db-97e1-153b69a00716",
+          "target_sha256": "4fa572c454b9b21079360339853d1e480a79c5da8470c24e4c1f379c1d911484",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "23de1867-0de7-4819-a82f-6dab810448f6",
+          "target_sha256": "4fa572c454b9b21079360339853d1e480a79c5da8470c24e4c1f379c1d911484",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "key",
+    "probe_episodes": 10,
+    "probe_elapsed_s": 0.010470166977029294
+  },
+  {
+    "record_id": "distractor_0",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 1.0,
+    "delta": 0.0,
+    "n_trials": 5,
+    "p_value": 1.0,
+    "is_significant": false,
+    "is_useful": false,
+    "trials": [
+      {
+        "seed": 42,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "6dc51241-0eb1-4a3b-a7fd-6eabc2b6d440",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "10a8ef83-4ceb-42fb-b1a5-8516839820c2",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 43,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "eb6f2b49-08dd-4b14-a4a8-de6b9f6f419e",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "0d07eba3-ea48-4b41-bbea-6874537182ff",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 44,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "527cd485-3790-47fd-a9c3-5d898e349059",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "8eb8b06f-8876-4414-8c43-a0e429546039",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 45,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "e1502c2c-8247-4a1c-a4fe-cc079e4f65cd",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "aaa45739-d716-49cc-83f5-83052670bb57",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 46,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "b8fd60d2-4a0b-4741-99b5-6bcc0e896c74",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "0ffd432e-917e-4535-b784-52151882b240",
+          "target_sha256": "ba7b3318d5c8fdfb30739e1a58a14ba25238d8233c46e6e27b9d170ee7d70445",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "key",
+    "probe_episodes": 10,
+    "probe_elapsed_s": 0.007251375005580485
+  },
+  {
+    "record_id": "distractor_1",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 1.0,
+    "delta": 0.0,
+    "n_trials": 5,
+    "p_value": 1.0,
+    "is_significant": false,
+    "is_useful": false,
+    "trials": [
+      {
+        "seed": 42,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "3210db84-a8be-4daa-b14d-03400beb8540",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "22faf550-019e-4c2c-83b7-37ff0e005846",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 43,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "0c3a28bb-cb23-42ca-80bd-22a09f7307a0",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "02617ced-c7fa-416b-ae2e-e33b8bb4412f",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 44,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "37bd75f2-8422-46ff-8765-0228236945ff",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "2610bb0d-f1c1-42a6-af98-b0d046b4ae3d",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 45,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "2662f916-a0a8-403c-b080-e5acc33502c3",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "8e604c76-bad5-4dea-a478-2d630ed57193",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 46,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "3b9dc4fa-265a-472e-a591-6b7ee1b3cb2c",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "f0ff0476-6290-4e73-aecb-04da9698f8ef",
+          "target_sha256": "8f7ee478dcb522480fba89cf3eeabe5859f686948f7536b46165444850b3107b",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "key",
+    "probe_episodes": 10,
+    "probe_elapsed_s": 0.006347291055135429
+  },
+  {
+    "record_id": "distractor_2",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 1.0,
+    "delta": 0.0,
+    "n_trials": 5,
+    "p_value": 1.0,
+    "is_significant": false,
+    "is_useful": false,
+    "trials": [
+      {
+        "seed": 42,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "ff3799e7-d476-467c-96a3-563d525fb29e",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "71e0c9cf-ab74-4e93-925e-e5e3d8eca1d6",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 43,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "dc6312a6-5ecb-4311-a562-a2d9d9bca54b",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "02a445a7-78b6-4221-a259-d67f592ab739",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 44,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "aca8b230-3ca0-4799-8370-9edf5dad7dd1",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "3de830fe-e4c5-430b-9071-402c4083621f",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 45,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "87e5fd00-c523-4734-8a58-e0041b863644",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "2d820746-5af3-497d-bf8c-503f0710c6bf",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 46,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "7ba26e6c-f204-48ab-8bc5-1ff7fac11a7d",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "86889ac0-3f3b-433a-b4ee-6c7b49cf81d6",
+          "target_sha256": "8c6de5fab3d4121913c0cd0ba1d07df96364216fe2ee6b8d1ebbb7bb641a8702",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "key",
+    "probe_episodes": 10,
+    "probe_elapsed_s": 0.007612875022459775
+  },
+  {
+    "record_id": "distractor_3",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 1.0,
+    "delta": 0.0,
+    "n_trials": 5,
+    "p_value": 1.0,
+    "is_significant": false,
+    "is_useful": false,
+    "trials": [
+      {
+        "seed": 42,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "983854e4-88c3-4a93-91a9-4c0c5db3874e",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "1f9c9656-e5ed-4a64-ab74-fb18a51b6dcd",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 43,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "b3721a52-7e4b-45eb-a464-07c7f65911be",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "85e573cf-3938-42e4-9248-08c77cd5cfe5",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 44,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "a15c8085-0f5c-4fe3-8f0a-082b986874a2",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "fadb0c48-4383-47cf-bd36-510fc7282637",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 45,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "d2619c8a-4862-4437-8453-c2321f48d417",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "14e5e594-9475-4b2c-9879-88127e62dac4",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 46,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "a7888355-255a-4f4b-a8b6-45eadadd7eda",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "f1cd5919-4da4-42ed-83f4-f6e6d9638b7c",
+          "target_sha256": "b59dc6989a0c61e39d2bdc5f89745d4bfc9abf4d009cc33b193ebd16e0549b14",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "key",
+    "probe_episodes": 10,
+    "probe_elapsed_s": 0.006779874966014177
+  },
+  {
+    "record_id": "distractor_4",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 1.0,
+    "delta": 0.0,
+    "n_trials": 5,
+    "p_value": 1.0,
+    "is_significant": false,
+    "is_useful": false,
+    "trials": [
+      {
+        "seed": 42,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "14368ddc-f006-49e8-83cf-b0e5aec0e683",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "fbcc3b53-f771-4a98-aa41-b145549fe699",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 43,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "76b8c20e-368b-458c-97c3-a8b3ce8db8f6",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "3aa5bb6d-2ba5-449d-8995-549e58faa8f2",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 44,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "9e2a5e1e-c7ae-4b89-8471-e76926f73d07",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "fe2898df-7fe0-4ee0-bf8b-44588563f0a0",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 45,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "c95dd9a3-ac83-41bb-98cd-2257e74395d0",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "9d430a85-bc20-48f9-860e-64994a6f53f6",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 46,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "52054535-e17d-43ef-b70b-7144ce57385b",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "338bf44b-a64c-4ad6-96a8-68db0fa350b9",
+          "target_sha256": "241e65468a3bcdedd76f015581c2b85a0b82b27011c15509a8d5e29c7d028858",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "key",
+    "probe_episodes": 10,
+    "probe_elapsed_s": 0.006858584005385637
+  },
+  {
+    "record_id": "summary_record",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 1.0,
+    "delta": 0.0,
+    "n_trials": 10,
+    "p_value": 1.0,
+    "is_significant": false,
+    "is_useful": false,
+    "trials": [
+      {
+        "seed": 142,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "305234ad-9a4f-4aa7-992b-7a51d1eea37f",
+          "target_sha256": "31502a873137c2bd3d67b6b9b0b85d83dc87dcef95c171f237dfb91dcaf71656",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "4b600df8-5a83-45f0-a639-3dc213fe9228",
+          "target_sha256": "31502a873137c2bd3d67b6b9b0b85d83dc87dcef95c171f237dfb91dcaf71656",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 143,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "eb7a3693-afd1-4c12-b588-f34db4344e0c",
+          "target_sha256": "f2352440b275dd177bed8fe69a13e0761321d0c42ae17c19335d46bb6b0e6e35",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "53fe6819-538d-440f-95d6-7a0ede2b8e33",
+          "target_sha256": "f2352440b275dd177bed8fe69a13e0761321d0c42ae17c19335d46bb6b0e6e35",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 144,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "6f7f63ea-00ad-4995-8908-6368349effd8",
+          "target_sha256": "b479dfd4efb982d15f7764a8185312b7b48c32c7c0824951efbf8487a8814230",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "972a3828-4251-48f9-9cce-5af4c73256b5",
+          "target_sha256": "b479dfd4efb982d15f7764a8185312b7b48c32c7c0824951efbf8487a8814230",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 145,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "c2ae2de9-e9dc-4663-a6db-f96896eae81f",
+          "target_sha256": "b479dfd4efb982d15f7764a8185312b7b48c32c7c0824951efbf8487a8814230",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "cb996e0c-da7c-46be-b0fa-d61b1ade0dce",
+          "target_sha256": "b479dfd4efb982d15f7764a8185312b7b48c32c7c0824951efbf8487a8814230",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 146,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "1eac9598-2e40-4776-b739-0a3d1fdc6a93",
+          "target_sha256": "f2352440b275dd177bed8fe69a13e0761321d0c42ae17c19335d46bb6b0e6e35",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "a81b5964-fca4-4bc3-a6ad-699725055844",
+          "target_sha256": "f2352440b275dd177bed8fe69a13e0761321d0c42ae17c19335d46bb6b0e6e35",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 147,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "c87d7a64-a9cf-43e5-a1ad-f2ea4c4e9fbd",
+          "target_sha256": "31502a873137c2bd3d67b6b9b0b85d83dc87dcef95c171f237dfb91dcaf71656",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "c89270f0-a51b-4572-ba5a-ed9774b21f35",
+          "target_sha256": "31502a873137c2bd3d67b6b9b0b85d83dc87dcef95c171f237dfb91dcaf71656",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 148,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "50910fa7-62d1-4f4a-b270-61cd31c1a4f6",
+          "target_sha256": "b479dfd4efb982d15f7764a8185312b7b48c32c7c0824951efbf8487a8814230",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "6f067436-5bc4-4ea4-ab33-330422a5d957",
+          "target_sha256": "b479dfd4efb982d15f7764a8185312b7b48c32c7c0824951efbf8487a8814230",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 149,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "33144aec-dda2-4179-b97a-08f911fbcf36",
+          "target_sha256": "f2352440b275dd177bed8fe69a13e0761321d0c42ae17c19335d46bb6b0e6e35",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "c2a30ad7-3417-47e0-9428-28858f0f19fd",
+          "target_sha256": "f2352440b275dd177bed8fe69a13e0761321d0c42ae17c19335d46bb6b0e6e35",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 150,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "bc674135-b6d4-4f62-a744-760ba54cd2ca",
+          "target_sha256": "b479dfd4efb982d15f7764a8185312b7b48c32c7c0824951efbf8487a8814230",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "e57a56ca-618c-4176-8c5f-4a1a951d98be",
+          "target_sha256": "b479dfd4efb982d15f7764a8185312b7b48c32c7c0824951efbf8487a8814230",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 151,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "fff4650a-c7b1-459a-b432-7df877bcef90",
+          "target_sha256": "31502a873137c2bd3d67b6b9b0b85d83dc87dcef95c171f237dfb91dcaf71656",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "c838b2d2-2c04-441b-99cf-46085468c776",
+          "target_sha256": "31502a873137c2bd3d67b6b9b0b85d83dc87dcef95c171f237dfb91dcaf71656",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "summary",
+    "probe_episodes": 20,
+    "probe_elapsed_s": 0.023349041992332786
+  },
+  {
+    "record_id": "indirect_hint",
+    "intervention_method": "ablate",
+    "baseline_metric": 1.0,
+    "intervention_metric": 0.3,
+    "delta": 0.7,
+    "n_trials": 10,
+    "p_value": 0.015625,
+    "is_significant": true,
+    "is_useful": true,
+    "trials": [
+      {
+        "seed": 242,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "40d27743-ede2-4f89-b13d-f460b416ba9c",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "1ea2e2d0-1f17-4109-94c7-d80bf28d28da",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 243,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "9b01e1d4-f6be-49e0-91d5-e5aafb3693bc",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "f46cb895-f479-4973-859e-8cb905f2c4ba",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 244,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "393b111f-a969-41cc-b386-ec1196e90a70",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "1c3a73d2-17fc-4ca3-b362-84b2361d39fa",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 245,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 1.0,
+        "baseline": {
+          "record_id": "4307c1e6-0fee-4624-bed5-0b1ed5fba398",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "dff4fe43-f3a6-4d6f-b288-e30f3573dbac",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 246,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "7cbafde4-ae70-4c9f-addb-c53645d46f3c",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "2082904c-d3a6-4143-8567-48383ae0e43c",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 247,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "59395c49-5385-4487-bbf4-dfb611f842a2",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "f97a6024-72cc-4c11-af35-c1d4f700651e",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 248,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "cacccd95-53bc-44c4-a585-17dc441f62ea",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "9721362a-79fb-4bf1-9f41-6d9497000e67",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 249,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "cbb74e01-450b-4f9b-abbe-b1a88d625ade",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "faaf9709-00ad-454c-b85b-599095db16f4",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 250,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "c54fea3e-87f4-4832-aedc-c9a63fdb3521",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "ae2c2c3d-e35c-4eb3-b812-78f4cbe686f9",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      },
+      {
+        "seed": 251,
+        "episodes_per_arm": 1,
+        "baseline_metric": 1.0,
+        "intervention_metric": 0.0,
+        "baseline": {
+          "record_id": "13149ed8-dc20-4dff-b8ff-ede5bbf69c4e",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": false
+        },
+        "intervention": {
+          "record_id": "13b08fc0-fa7b-474b-ae4b-bbf6de0b9041",
+          "target_sha256": "c24d9aefaa7146c0add9fcea6257cbd568bd404963e469c5afe3432b6e04aea1",
+          "read_ordinal": 1,
+          "removed": true
+        }
+      }
+    ],
+    "scenario": "hint",
+    "probe_episodes": 20,
+    "probe_elapsed_s": 0.019798875029664487
+  }
+]

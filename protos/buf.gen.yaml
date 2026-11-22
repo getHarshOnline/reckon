@@ -1,0 +1,31 @@
+# buf.gen.yaml - Code generation configuration
+# https://buf.build/docs/configuration/v2/buf-gen-yaml
+version: v2
+
+managed:
+  enabled: true
+  override:
+    - file_option: java_package_prefix
+      value: com.rtepl.causality
+    - file_option: java_multiple_files
+      value: true
+
+plugins:
+  # Python wire dataclasses and asynchronous gRPC client/server.
+  - local: protoc-gen-python_betterproto2
+    strategy: all
+    out: ../src/reckon/generated
+    opt:
+      - client_generation=async
+      - server_generation=async
+
+  # TypeScript - protobuf-ts
+  - local: protoc-gen-ts
+    strategy: all
+    out: ../viz-ui/generated
+    opt:
+      - long_type_string
+      - generate_dependencies
+
+inputs:
+  - directory: .

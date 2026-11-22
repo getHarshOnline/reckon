@@ -1,0 +1,30 @@
+[
+  {
+    "x": 60,
+    "y": 0.8333333333333334,
+    "label": "n=5",
+    "metadata": {
+      "n_trials": 5,
+      "classification_accuracy": 0.8333333333333334,
+      "probe_episodes": 60,
+      "probe_elapsed_s": 0.0453201670316048,
+      "probe_episode_fraction": 0.9230769230769231,
+      "probe_time_fraction": 0.9188056732095361
+    },
+    "is_pareto": true
+  },
+  {
+    "x": 120,
+    "y": 1.0,
+    "label": "n=10",
+    "metadata": {
+      "n_trials": 10,
+      "classification_accuracy": 1.0,
+      "probe_episodes": 120,
+      "probe_elapsed_s": 0.08232312393374741,
+      "probe_episode_fraction": 0.96,
+      "probe_time_fraction": 0.9536081561888645
+    },
+    "is_pareto": true
+  }
+]

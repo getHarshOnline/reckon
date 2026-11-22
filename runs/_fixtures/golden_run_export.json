@@ -1,0 +1,48 @@
+{
+  "run_id": "fixture_001",
+  "summary": {
+    "run_id": "fixture_001",
+    "config_id": "0396bf0008fa",
+    "config_json": "{\"task\": \"keydoor\", \"policy\": \"causal\", \"budget_slots\": 100, \"seed\": 42}",
+    "notebook_name": "golden_fixture",
+    "run_mode": "demo",
+    "git_hash": "abcdef1234567890",
+    "started_at_ms": 1708000000000,
+    "finished_at_ms": 1708003600000,
+    "task_name": "keydoor",
+    "num_episodes": 10,
+    "budget_slots": 100,
+    "seed": 42,
+    "seed_count": 1,
+    "policy_name": "causal",
+    "metrics": {
+      "success_rate": 0.8,
+      "probe_overhead_ratio": 0.15,
+      "reward_per_total_episode": 0.72,
+      "causal_precision": 0.85,
+      "base_episodes": 10,
+      "probe_episodes": 2
+    },
+    "pareto_point": {
+      "x": 0.15,
+      "y": 0.8,
+      "x_metric": "probe_overhead_ratio",
+      "y_metric": "success_rate",
+      "is_pareto": true,
+      "label": "causal@100"
+    },
+    "core_api_version": "1.0",
+    "events_schema_version": "LogEvent/v1",
+    "metrics_schema_version": "MetricsCSV/v1",
+    "artifacts": {
+      "config_path": "config.json",
+      "summary_path": "summary.md",
+      "events_path": "logs/events.jsonl",
+      "metrics_csv_path": "metrics.csv",
+      "figure_paths": ["figures/pareto.png", "figures/timeline.png"],
+      "log_paths": []
+    }
+  },
+  "events_jsonl_bytes": "{\"event_id\":\"evt_001\",\"event_type\":\"EPISODE_START\",\"episode_id\":\"ep_001\",\"timestamp\":1,\"wall_time_ms\":1708000000000,\"snapshot\":[]}\n{\"event_id\":\"evt_002\",\"event_type\":\"WRITE\",\"episode_id\":\"ep_001\",\"timestamp\":2,\"record_id\":\"rec_001\",\"wall_time_ms\":1708000001000,\"snapshot\":[{\"id\":\"rec_001\",\"timestamp\":2,\"episodeId\":\"ep_001\",\"payloadType\":1,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":50},\"tags\":[\"observation\"],\"provenance\":{\"inputIds\":[]},\"utility\":{\"value\":0.8},\"causalScore\":{\"influenceProxy\":0.5}}]}\n{\"event_id\":\"evt_003\",\"event_type\":\"WRITE\",\"episode_id\":\"ep_001\",\"timestamp\":3,\"record_id\":\"rec_002\",\"wall_time_ms\":1708000002000,\"snapshot\":[{\"id\":\"rec_001\",\"timestamp\":2,\"episodeId\":\"ep_001\",\"payloadType\":1,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":50},\"tags\":[\"observation\"],\"provenance\":{\"inputIds\":[]},\"utility\":{\"value\":0.8},\"causalScore\":{\"influenceProxy\":0.5}},{\"id\":\"rec_002\",\"timestamp\":3,\"episodeId\":\"ep_001\",\"payloadType\":1,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":30},\"tags\":[\"observation\"],\"provenance\":{\"inputIds\":[\"rec_001\"]},\"utility\":{\"value\":0.6},\"causalScore\":{\"influenceProxy\":0.4,\"ablationDelta\":0.3}}]}\n{\"event_id\":\"evt_004\",\"event_type\":\"READ\",\"episode_id\":\"ep_001\",\"timestamp\":4,\"record_id\":\"rec_001\",\"wall_time_ms\":1708000003000,\"snapshot\":[{\"id\":\"rec_001\",\"timestamp\":2,\"episodeId\":\"ep_001\",\"payloadType\":1,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":50},\"tags\":[\"observation\"],\"provenance\":{\"inputIds\":[]},\"utility\":{\"value\":0.8},\"causalScore\":{\"influenceProxy\":0.5}},{\"id\":\"rec_002\",\"timestamp\":3,\"episodeId\":\"ep_001\",\"payloadType\":1,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":30},\"tags\":[\"observation\"],\"provenance\":{\"inputIds\":[\"rec_001\"]},\"utility\":{\"value\":0.6},\"causalScore\":{\"influenceProxy\":0.4,\"ablationDelta\":0.3}}]}\n{\"event_id\":\"evt_005\",\"event_type\":\"WRITE\",\"episode_id\":\"ep_001\",\"timestamp\":5,\"record_id\":\"rec_003\",\"wall_time_ms\":1708000004000,\"snapshot\":[{\"id\":\"rec_001\",\"timestamp\":2,\"episodeId\":\"ep_001\",\"payloadType\":1,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":50},\"tags\":[\"observation\"],\"provenance\":{\"inputIds\":[]},\"utility\":{\"value\":0.8},\"causalScore\":{\"influenceProxy\":0.5}},{\"id\":\"rec_002\",\"timestamp\":3,\"episodeId\":\"ep_001\",\"payloadType\":1,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":30},\"tags\":[\"observation\"],\"provenance\":{\"inputIds\":[\"rec_001\"]},\"utility\":{\"value\":0.6},\"causalScore\":{\"influenceProxy\":0.4,\"ablationDelta\":0.3}},{\"id\":\"rec_003\",\"timestamp\":5,\"episodeId\":\"ep_001\",\"payloadType\":2,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":20},\"tags\":[\"action\"],\"provenance\":{\"inputIds\":[\"rec_001\",\"rec_002\"]},\"utility\":{\"value\":0.9},\"causalScore\":{\"influenceProxy\":0.7,\"ablationDelta\":0.5}}]}\n{\"event_id\":\"evt_006\",\"event_type\":\"PRUNE\",\"episode_id\":\"ep_001\",\"timestamp\":6,\"record_id\":\"rec_001\",\"prune_reason\":\"budget_exceeded\",\"wall_time_ms\":1708000005000,\"snapshot\":[{\"id\":\"rec_002\",\"timestamp\":3,\"episodeId\":\"ep_001\",\"payloadType\":1,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":30},\"tags\":[\"observation\"],\"provenance\":{\"inputIds\":[\"rec_001\"]},\"utility\":{\"value\":0.6},\"causalScore\":{\"influenceProxy\":0.4,\"ablationDelta\":0.3}},{\"id\":\"rec_003\",\"timestamp\":5,\"episodeId\":\"ep_001\",\"payloadType\":2,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":20},\"tags\":[\"action\"],\"provenance\":{\"inputIds\":[\"rec_001\",\"rec_002\"]},\"utility\":{\"value\":0.9},\"causalScore\":{\"influenceProxy\":0.7,\"ablationDelta\":0.5}}]}\n{\"event_id\":\"evt_007\",\"event_type\":\"EPISODE_END\",\"episode_id\":\"ep_001\",\"timestamp\":7,\"wall_time_ms\":1708000006000,\"snapshot\":[{\"id\":\"rec_002\",\"timestamp\":3,\"episodeId\":\"ep_001\",\"payloadType\":1,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":30},\"tags\":[\"observation\"],\"provenance\":{\"inputIds\":[\"rec_001\"]},\"utility\":{\"value\":0.6},\"causalScore\":{\"influenceProxy\":0.4,\"ablationDelta\":0.3}},{\"id\":\"rec_003\",\"timestamp\":5,\"episodeId\":\"ep_001\",\"payloadType\":2,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":20},\"tags\":[\"action\"],\"provenance\":{\"inputIds\":[\"rec_001\",\"rec_002\"]},\"utility\":{\"value\":0.9},\"causalScore\":{\"influenceProxy\":0.7,\"ablationDelta\":0.5}}]}\n{\"event_id\":\"evt_008\",\"event_type\":\"EPISODE_START\",\"episode_id\":\"ep_002\",\"timestamp\":8,\"wall_time_ms\":1708000100000,\"snapshot\":[]}\n{\"event_id\":\"evt_009\",\"event_type\":\"WRITE\",\"episode_id\":\"ep_002\",\"timestamp\":9,\"record_id\":\"rec_004\",\"wall_time_ms\":1708000101000,\"snapshot\":[{\"id\":\"rec_004\",\"timestamp\":9,\"episodeId\":\"ep_002\",\"payloadType\":3,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":10},\"tags\":[\"reward\"],\"provenance\":{\"inputIds\":[]},\"utility\":{\"value\":1.0},\"causalScore\":{\"influenceProxy\":0.9}}]}\n{\"event_id\":\"evt_010\",\"event_type\":\"EPISODE_END\",\"episode_id\":\"ep_002\",\"timestamp\":10,\"wall_time_ms\":1708000102000,\"snapshot\":[{\"id\":\"rec_004\",\"timestamp\":9,\"episodeId\":\"ep_002\",\"payloadType\":3,\"compressed\":false,\"encoding\":\"json\",\"cost\":{\"tokens\":10},\"tags\":[\"reward\"],\"provenance\":{\"inputIds\":[]},\"utility\":{\"value\":1.0},\"causalScore\":{\"influenceProxy\":0.9}}]}",
+  "core_api_version": "1.0"
+}

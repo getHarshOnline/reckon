@@ -1,0 +1,38 @@
+{
+  "task": "tutor",
+  "environment": {
+    "num_concepts": 6,
+    "num_sessions": 1,
+    "questions_per_session": 6,
+    "misconception_probability": 1.0,
+    "hint_success_probability": 0.3,
+    "hint_effectiveness_boost": 0.2
+  },
+  "budget": {
+    "max_slots": 2
+  },
+  "retention_policy": "fifo",
+  "experiment": {
+    "num_episodes": 5,
+    "seed": 100,
+    "reset_memory": false,
+    "learn_utility": true
+  },
+  "retention_probe": {
+    "episodes_per_arm": 1,
+    "reference_policy": "fifo",
+    "sampling": {
+      "test_type": "permutation",
+      "n_trials": 4,
+      "n_permutations": 256,
+      "alpha": 0.05,
+      "delta_threshold": 0.05,
+      "fdr_method": "bonferroni",
+      "adaptive_sampling": false,
+      "early_stopping": true,
+      "min_trials": 2,
+      "max_trials": 4,
+      "seed": 1000000
+    }
+  }
+}

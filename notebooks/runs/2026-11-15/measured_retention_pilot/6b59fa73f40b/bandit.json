@@ -1,0 +1,36 @@
+{
+  "task": "bandit",
+  "environment": {
+    "num_arms": 2,
+    "num_modes": 2,
+    "mode_switch_interval": 25,
+    "indicator_probability": 0.1
+  },
+  "budget": {
+    "max_slots": 1
+  },
+  "retention_policy": "fifo",
+  "experiment": {
+    "num_episodes": 3,
+    "seed": 100,
+    "reset_memory": false,
+    "learn_utility": true
+  },
+  "retention_probe": {
+    "episodes_per_arm": 1,
+    "reference_policy": "fifo",
+    "sampling": {
+      "test_type": "permutation",
+      "n_trials": 4,
+      "n_permutations": 256,
+      "alpha": 0.05,
+      "delta_threshold": 0.05,
+      "fdr_method": "bonferroni",
+      "adaptive_sampling": false,
+      "early_stopping": true,
+      "min_trials": 2,
+      "max_trials": 4,
+      "seed": 1000000
+    }
+  }
+}

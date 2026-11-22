@@ -1,0 +1,17 @@
+{
+  "run_mode": "demo",
+  "backend_versions": {
+    "minigrid": "3.2.0",
+    "gymnasium": "1.4.0",
+    "pygame-ce": "2.5.6"
+  },
+  "uncommitted_source": false,
+  "sha256": {
+    "_utils/adapters/record_probe.py": "379c110e4f54b795a4e8e8fd492391d93575cbd4bef79f678ae2954b774ad73e",
+    "_utils/adapters/episode_memory.py": "2996af2ae212fb101a1892ab053cee4edfd27e29d2515128f06cb77df288eb90",
+    "05_rl_env_adapter_minigrid.ipynb": "72ca10c52d6c2b989cf4208fcc4f45e38c65dcd5d0cd2fd57fd0ad51e97e5886",
+    "_utils/adapters/memory_maze.py": "4d8f78e29cd65d8a00a6c33217ab989d7fe19e97e62e7e0477efa2f6c4ebb3db",
+    "_utils/adapters/minigrid_adapter.py": "066ece85f802ad032fa5b9802b80582647ff01248fd0d4f1647dd000542dbb6f",
+    "_utils/artifacts.py": "0f662e64b49896ac7acf7d2fcb28e6980b52165cdcf975d37892e7c651dd43be"
+  }
+}

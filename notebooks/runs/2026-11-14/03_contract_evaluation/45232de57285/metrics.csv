@@ -1,0 +1,7 @@
+record_id,intervention_method,baseline_metric,intervention_metric,delta,n_trials,p_value,is_significant,is_useful,scenario,probe_episodes,probe_elapsed_s
+key_record,ablate,1.0,0.0,1.0,50,9.999000099990002e-05,True,True,key,100,0.15469125000527129
+distractor_0,ablate,1.0,1.0,0.0,50,1.0,False,False,key,100,0.15395649999845773
+distractor_1,ablate,1.0,1.0,0.0,50,1.0,False,False,key,100,0.23110020899912342
+distractor_2,ablate,1.0,1.0,0.0,50,1.0,False,False,key,100,0.16832062497269362
+distractor_3,ablate,1.0,1.0,0.0,50,1.0,False,False,key,100,0.1777005000039935
+distractor_4,ablate,1.0,1.0,0.0,50,1.0,False,False,key,100,0.14954474999103695

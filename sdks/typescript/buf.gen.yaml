@@ -1,0 +1,11 @@
+version: v1
+plugins:
+  # Generate ES modules with @bufbuild/protobuf
+  - plugin: es
+    out: src/gen
+    opt: target=ts
+
+  # Generate ConnectRPC client code
+  - plugin: connect-es
+    out: src/gen
+    opt: target=ts

@@ -1,0 +1,20 @@
+{
+  "backend": "sim",
+  "ollama_available": true,
+  "n_steps_per_episode": 8,
+  "fixture_version": 2,
+  "outcome": "literal constraint recall in final answer",
+  "measured_retention_effects": false,
+  "policies": [
+    "FIFO",
+    "LRU",
+    "Utility",
+    "Causal"
+  ],
+  "budgets": [
+    5,
+    10,
+    15,
+    20
+  ]
+}

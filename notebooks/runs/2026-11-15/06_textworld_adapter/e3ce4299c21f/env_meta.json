@@ -1,0 +1,17 @@
+{
+  "textworld_available": true,
+  "ollama_available": true,
+  "policy_backend": "scripted",
+  "policies": [
+    "FIFO",
+    "LRU",
+    "Utility",
+    "Causal"
+  ],
+  "budgets": [
+    5,
+    10,
+    15,
+    25
+  ]
+}

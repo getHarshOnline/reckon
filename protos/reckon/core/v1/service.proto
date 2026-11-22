@@ -1,0 +1,158 @@
+// Reckon Core API v1 Service
+// The daemon's five-method RPC API: Write, Retrieve, Observe, Probe and ExportRun
+syntax = "proto3";
+
+package reckon.core.v1;
+
+option java_package = "com.rtepl.causality.reckon.core.v1";
+option java_multiple_files = true;
+
+import "reckon/core/v1/types.proto";
+
+// 5-verb API (pruning/forget is internal policy, not a verb)
+service CausalMemoryService {
+  // Write a record to memory
+  rpc Write(WriteRequest) returns (WriteResponse);
+
+  // Retrieve records by query
+  rpc Retrieve(RetrieveRequest) returns (RetrieveResponse);
+
+  // Observe outcome and assign credit
+  rpc Observe(ObserveRequest) returns (ObserveResponse);
+
+  // Probe records for causal influence
+  rpc Probe(ProbeRequest) returns (ProbeResponse);
+
+  // Export run data for analysis
+  rpc ExportRun(ExportRunRequest) returns (ExportRunResponse);
+}
+
+// =============================================================================
+// WRITE
+// =============================================================================
+
+message WriteRequest {
+  // The payload data to write
+  bytes payload = 1;
+  // Type of payload
+  PayloadType payload_type = 2;
+  // Tags for the record
+  map<string, TagValue> tags = 3;
+  // Links to other records
+  repeated Link links = 4;
+  // Initial utility estimate
+  double initial_utility = 5;
+  // Optional local run identity. Empty operations have no export provenance.
+  string run_id = 6;
+}
+
+message WriteResponse {
+  // Assigned record ID
+  string record_id = 1;
+  // Timestamp when written
+  int64 timestamp = 2;
+  // Episode ID
+  string episode_id = 3;
+  // Resource cost
+  RecordCost cost = 4;
+  // API version
+  CoreApiVersion api_version = 5;
+}
+
+// =============================================================================
+// RETRIEVE
+// =============================================================================
+
+message RetrieveRequest {
+  // Query type
+  oneof query {
+    TagQuery by_tags = 1;
+    IdQuery by_ids = 2;
+    UtilityQuery by_utility = 3;
+  }
+  // Maximum number of records to return
+  int32 limit = 10;
+  // Episode context for credit tracking
+  EpisodeContextRef context = 11;
+  // Must match a reused context's run; empty means unattributed operations.
+  string run_id = 12;
+}
+
+message RetrieveResponse {
+  // Retrieved records
+  repeated Record records = 1;
+  // Episode context ID (for use with Observe)
+  string episode_context_id = 2;
+  // API version
+  CoreApiVersion api_version = 3;
+}
+
+// =============================================================================
+// OBSERVE
+// =============================================================================
+
+message ObserveRequest {
+  // Episode context ID from Retrieve
+  string episode_context_id = 1;
+  // Outcome value (reward, success indicator, etc.)
+  double outcome_value = 2;
+  // Type of outcome (for logging/analysis)
+  string outcome_type = 3;
+  // Credit assignment policy
+  CreditPolicy credit_policy = 4;
+}
+
+message ObserveResponse {
+  // Credit assignments made
+  repeated CreditAssignment credits = 1;
+  // Policy used
+  CreditPolicy policy_used = 2;
+  // API version
+  CoreApiVersion api_version = 3;
+}
+
+// =============================================================================
+// PROBE
+// =============================================================================
+
+message ProbeRequest {
+  // Record IDs to probe
+  repeated string record_ids = 1;
+  // Probe configuration
+  ProbeConfig config = 2;
+}
+
+message ProbeResponse {
+  // Evidence for each record
+  repeated Evidence evidence = 1;
+  // Probe cost summary
+  ProbeCostSummary cost = 2;
+  // API version
+  CoreApiVersion api_version = 3;
+}
+
+message ExportRunResponse {
+  // The exported run data
+  RunExport export = 1;
+}
+
+// =============================================================================
+// EXPORT RUN
+// =============================================================================
+
+message ExportRunRequest {
+  // Run ID to export
+  string run_id = 1;
+  // Include events JSONL
+  bool include_events = 2;
+  // Include metrics CSV
+  bool include_metrics_csv = 3;
+  // Which records to include
+  RecordScope record_scope = 4;
+  // Maximum records to include (0 = no limit)
+  int32 max_records = 5;
+  // Bundle everything as tar.gz
+  bool include_artifacts_tar = 6;
+  // Refuse if this run has changed since the caller's previous export.
+  optional uint64 expected_revision = 7;
+}

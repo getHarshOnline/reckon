@@ -1,0 +1,20 @@
+# buf.yaml - Buf.build configuration for Reckon protos
+# https://buf.build/docs/configuration/v2/buf-yaml
+version: v2
+
+modules:
+  - path: .
+    name: buf.build/rtepl/reckon
+
+lint:
+  use:
+    - STANDARD
+  except:
+    - PACKAGE_VERSION_SUFFIX
+  disallow_comment_ignores: true
+
+breaking:
+  use:
+    - FILE
+
+deps: []

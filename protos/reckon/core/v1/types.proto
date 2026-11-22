@@ -1,0 +1,393 @@
+// Reckon Core API v1 Types
+// Wire messages the daemon's API uses: Record, Query, RunSummary, RunExport, ParetoPoint, Link and TagValue
+syntax = "proto3";
+
+package reckon.core.v1;
+
+option java_package = "com.rtepl.causality.reckon.core.v1";
+option java_multiple_files = true;
+
+// =============================================================================
+// PAYLOAD TYPE
+// =============================================================================
+
+// Type of payload stored in a record
+enum PayloadType {
+  PAYLOAD_TYPE_UNSPECIFIED = 0;
+  PAYLOAD_TYPE_OBSERVATION = 1;
+  PAYLOAD_TYPE_ACTION = 2;
+  PAYLOAD_TYPE_REWARD = 3;
+  PAYLOAD_TYPE_CUE = 4;
+  PAYLOAD_TYPE_TRACE = 5;
+  PAYLOAD_TYPE_REPRESENTATION = 6;
+  PAYLOAD_TYPE_CUSTOM = 7;
+}
+
+// =============================================================================
+// TAGS & LINKS
+// =============================================================================
+
+// Tag value: supports string or list of strings
+message TagValue {
+  oneof value {
+    string string_value = 1;
+    StringList list_value = 2;
+  }
+}
+
+message StringList {
+  repeated string values = 1;
+}
+
+// Explicit relationship between records
+message Link {
+  // Relationship type: "caused_by", "derived_from", "supersedes"
+  string rel = 1;
+  // Target record ID
+  string to_record_id = 2;
+  // UTF-8 JSON, schema-less, optional
+  bytes meta_json = 3;
+}
+
+// =============================================================================
+// RECORD COST & SCORES
+// =============================================================================
+
+// Resource cost of storing a record
+message RecordCost {
+  // Size in bytes
+  int64 bytes = 1;
+  // Token count (for LLM contexts)
+  int64 tokens = 2;
+  // Number of slots occupied
+  int32 slots = 3;
+}
+
+// Utility estimates for retention decisions
+message UtilityEstimate {
+  // Estimated downstream utility
+  double value = 1;
+  // Uncertainty in value estimate (std dev)
+  double uncertainty = 2;
+  // Last timestep this record was retrieved
+  int64 last_used = 3;
+  // Number of times retrieved
+  int32 use_count = 4;
+}
+
+// Causal influence estimates (updated post-hoc via ablation/probes)
+message CausalScore {
+  // Performance change when record is ablated
+  optional double ablation_delta = 1;
+  // Performance change under counterfactual replacement
+  optional double counterfactual_delta = 2;
+  // Gradient-based or TD-error-based influence
+  optional double influence_proxy = 3;
+  // Timestep when causal score was last computed
+  int64 last_evaluated = 4;
+}
+
+// =============================================================================
+// RECORD
+// =============================================================================
+
+// A causal memory record stored by the Causal Memory Manager
+message Record {
+  // Unique identifier
+  string id = 1;
+  // Step/timestep when record was created
+  int64 timestamp = 2;
+  // Episode or run identifier
+  string episode_id = 3;
+  // Type of payload
+  PayloadType payload_type = 4;
+  // The actual data (JSON-encoded bytes)
+  bytes payload = 5;
+  // Whether payload is compressed
+  bool compressed = 6;
+  // Compression encoding (gzip, zstd, lz4)
+  string encoding = 7;
+  // Resource cost
+  RecordCost cost = 8;
+  // Map with typed tag values (replaces repeated string tags)
+  map<string, TagValue> tags = 9;
+  // Explicit relationships to other records
+  repeated Link links = 10;
+  // Utility estimates
+  UtilityEstimate utility = 11;
+  // Causal influence estimates
+  CausalScore causal_score = 12;
+  // Additional user-defined metadata (JSON-encoded)
+  bytes metadata = 13;
+  // Step at which this record was created (snapshot, immutable)
+  optional int64 created_at_step = 14;
+  // Sequence number at creation time (snapshot, immutable)
+  optional int64 created_at_sequence = 15;
+}
+
+// =============================================================================
+// RUN METRICS & PARETO POINT
+// =============================================================================
+
+// Metrics carried by the historical v1 summary format. Preserve its field names
+// and numbers when decoding saved runs. Names alone do not establish a formula;
+// in particular fields 4 and 5 need the original producer and source revision.
+message HistoricalRunMetricsV1 {
+  // Task-facing (PRODUCT defaults)
+  optional double mean_return = 1;
+  optional double success_rate = 2;
+  optional double reward_per_total_episode = 3;  // compute-normalized
+
+  // Historical labels; do not reinterpret as current task or record metrics.
+  optional double causal_precision = 4;
+  optional double useful_memory_rate = 5;
+
+  // Cost-facing
+  optional double probe_overhead_ratio = 6;
+  optional int32 base_episodes = 7;
+  optional int32 probe_episodes = 8;
+  optional double probe_wall_time_s = 9;
+
+  // Extensible extras (keys must be documented; values numeric only)
+  map<string, double> extra = 10;
+}
+
+// Coordinates retain the supplied measurement names.
+message ParetoPoint {
+  // Cost metric value (lower is better)
+  double x = 1;
+  // Quality metric value (higher is better)
+  double y = 2;
+  // X-axis metric name (e.g., "probe_overhead_ratio")
+  string x_metric = 3;
+  // Y-axis metric name (e.g., "reward_per_total_episode")
+  string y_metric = 4;
+  // Whether this point is on the Pareto frontier
+  bool is_pareto = 5;
+  // Optional display label
+  string label = 6;
+}
+
+// =============================================================================
+// ARTIFACT INDEX
+// =============================================================================
+
+message ArtifactIndex {
+  // Relative paths within run artifact folder (empty if absent)
+  string config_path = 1;                // "config.json"
+  string summary_path = 2;               // "summary.md"
+  string events_path = 3;                // "logs/events.jsonl"
+  string metrics_csv_path = 4;           // "metrics.csv"
+  repeated string figure_paths = 5;      // "figures/*.png"
+  repeated string log_paths = 6;         // other logs
+}
+
+// =============================================================================
+// RUN SUMMARY (UI-ready, diff-stable)
+// =============================================================================
+
+message RunSummary {
+  string run_id = 1;
+
+  // Identity for "You Are Here" marker A
+  // 12-char hash_config(normalized config JSON)
+  string config_id = 2;
+
+  // Full normalized config as UTF-8 JSON (includes policy knobs etc.)
+  bytes config_json = 3;
+
+  // Provenance / context
+  string notebook_name = 4;
+  string run_mode = 5;            // "demo" | "paper"
+  string git_hash = 6;            // present in config but excluded from hash
+
+  // Timing
+  int64 started_at_ms = 7;
+  int64 finished_at_ms = 8;
+
+  // Core task/budget summary (duplicated from config for easy filtering)
+  string task_name = 9;
+  int32 num_episodes = 10;
+
+  int32 budget_slots = 11;
+  optional int64 budget_bytes = 12;
+  optional int64 budget_tokens = 13;
+
+  int32 seed = 14;
+  int32 seed_count = 15;
+
+  string policy_name = 16;
+
+  // Historical v1 metrics; current task diagnostics have their own producers.
+  HistoricalRunMetricsV1 metrics = 17;
+
+  // Pareto location + axis semantics
+  ParetoPoint pareto_point = 18;
+
+  // Schema/version pointers for consumers
+  string core_api_version = 19;         // "1.0"
+  string events_schema_version = 20;    // "LogEvent/v1"
+  string metrics_schema_version = 21;   // "MetricsCSV/v1" (optional)
+
+  // Artifact inventory (so clients know what's included)
+  ArtifactIndex artifacts = 22;
+}
+
+// =============================================================================
+// RUN EXPORT (artifact bundle, JSONL-first for events)
+// =============================================================================
+
+// Record snapshot scope for export
+enum RecordScope {
+  RECORD_SCOPE_UNSPECIFIED = 0;
+  RECORD_SCOPE_NONE = 1;        // no records
+  RECORD_SCOPE_RETRIEVED = 2;   // records that were retrieved
+  RECORD_SCOPE_WRITTEN = 3;     // records that were written
+  RECORD_SCOPE_TOUCHED = 4;     // retrieved OR written
+  RECORD_SCOPE_ALL = 5;         // entire store (use with caution)
+}
+
+message RunExport {
+  string run_id = 1;
+  RunSummary summary = 2;
+
+  // Raw JSONL from Rust logger; NO type coupling in v1
+  bytes events_jsonl_bytes = 3;
+
+  // Optional heavy blobs (controlled by ExportRunRequest flags)
+  optional bytes metrics_csv_bytes = 4;
+
+  // Optional: snapshot of records (scoped, not entire store)
+  optional bytes records_snapshot_json = 5;  // UTF-8 JSON array
+
+  // Optional: single-file export
+  optional bytes artifacts_tar_gz = 6;
+
+  // Version tag
+  string core_api_version = 7;              // "1.0"
+  // Revision of the daemon's retained run observations, not the live store.
+  uint64 source_revision = 8;
+}
+
+// =============================================================================
+// CREDIT ASSIGNMENT
+// =============================================================================
+
+enum CreditPolicy {
+  CREDIT_POLICY_UNSPECIFIED = 0;
+  CREDIT_POLICY_NONE = 1;      // Standalone logging (degenerate)
+  CREDIT_POLICY_SIMPLE = 2;    // Equal credit
+  CREDIT_POLICY_SHAPED = 3;    // Utility-shaped
+  CREDIT_POLICY_ABLATION = 4;  // Positive measured ablation deltas
+}
+
+message CreditAssignment {
+  string record_id = 1;
+  double credit = 2;
+  CreditPolicy policy = 3;
+}
+
+// Episode context for credit linkage
+message EpisodeContext {
+  string id = 1;
+  string episode_id = 2;
+  int64 step = 3;
+  repeated string retrieved_record_ids = 4;
+  int64 created_at_ms = 5;
+  optional int64 ttl_ms = 6;   // context expiry for daemon mode
+}
+
+// =============================================================================
+// EVIDENCE (from causal probing)
+// =============================================================================
+
+message Evidence {
+  string record_id = 1;
+  string test_type = 2;
+  double baseline_mean = 3;
+  double baseline_std = 4;
+  double intervention_mean = 5;
+  double intervention_std = 6;
+  double delta = 7;
+  double effect_size_d = 8;      // Cohen's d
+  double p_value = 9;
+  double p_value_adjusted = 10;
+  double ci_lower = 11;
+  double ci_upper = 12;
+  int32 n_trials = 13;
+  optional double power = 14;
+  bool is_significant = 15;
+  bool is_significant_adjusted = 16;
+}
+
+// =============================================================================
+// QUERY TYPES
+// =============================================================================
+
+message TagQuery {
+  // Match records with these tags (AND semantics)
+  map<string, TagValue> tags = 1;
+}
+
+message IdQuery {
+  // Match records with these IDs
+  repeated string ids = 1;
+}
+
+message UtilityQuery {
+  // Match records with utility above this threshold
+  double min_utility = 1;
+  // Optional: limit to specific episode
+  optional string episode_id = 2;
+}
+
+// Episode context reference for tracking retrieved records
+message EpisodeContextRef {
+  // Existing context ID (for RPC mode)
+  optional string context_id = 1;
+  // Or create new context with this episode ID
+  optional string new_episode_id = 2;
+}
+
+// =============================================================================
+// PROBE CONFIG
+// =============================================================================
+
+message ProbeConfig {
+  // Test type: "t_test", "permutation", "bootstrap"
+  string test_type = 1;
+  // Number of trials per probe
+  int32 n_trials = 2;
+  // For permutation test
+  int32 n_permutations = 3;
+  // Significance level
+  double alpha = 4;
+  // Minimum effect size to consider significant
+  double delta_threshold = 5;
+  // FDR method: "none", "bonferroni", "bh"
+  string fdr_method = 6;
+  // Enable adaptive sampling
+  bool adaptive_sampling = 7;
+  // Enable early stopping
+  bool early_stopping = 8;
+  // Maximum trials for adaptive sampling
+  int32 max_trials = 9;
+}
+
+// Probe cost summary
+message ProbeCostSummary {
+  // Total episodes used for probing
+  int32 probe_episodes = 1;
+  // Total wall time for probes (seconds)
+  double probe_wall_time_s = 2;
+  // Number of records probed
+  int32 records_probed = 3;
+}
+
+// =============================================================================
+// API VERSION
+// =============================================================================
+
+message CoreApiVersion {
+  string version = 1;  // "1.0"
+}

@@ -1,0 +1,516 @@
+{
+  "seeds": [
+    63000,
+    63001,
+    63002,
+    63003
+  ],
+  "rows": [
+    {
+      "adapter": "textworld",
+      "policy": "none",
+      "slots": null,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.3050305000506341,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 61,
+          "discards": 61,
+          "peak_slots": 1,
+          "peak_bytes": 2054,
+          "final_slots": 0
+        },
+        {
+          "writes": 61,
+          "prunes": 61,
+          "discards": 61,
+          "peak_slots": 1,
+          "peak_bytes": 2145,
+          "final_slots": 0
+        },
+        {
+          "writes": 65,
+          "prunes": 65,
+          "discards": 65,
+          "peak_slots": 1,
+          "peak_bytes": 2305,
+          "final_slots": 0
+        },
+        {
+          "writes": 65,
+          "prunes": 65,
+          "discards": 65,
+          "peak_slots": 1,
+          "peak_bytes": 2733,
+          "final_slots": 0
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "full",
+      "slots": null,
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 4,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 0.7742452920065261,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 9,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 9,
+          "peak_bytes": 4024,
+          "final_slots": 9
+        },
+        {
+          "writes": 10,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 10,
+          "peak_bytes": 4493,
+          "final_slots": 10
+        },
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 4739,
+          "final_slots": 12
+        },
+        {
+          "writes": 12,
+          "prunes": 0,
+          "discards": 0,
+          "peak_slots": 12,
+          "peak_bytes": 5003,
+          "final_slots": 12
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "utility",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.5110180830815807,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2110,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2199,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2404,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2826,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "utility",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 0,
+      "probe_elapsed_s": 0,
+      "inclusive_elapsed_s": 1.4361622920259833,
+      "probe_batches": 0,
+      "record_estimates": 0,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 57,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2791,
+          "final_slots": 4
+        },
+        {
+          "writes": 62,
+          "prunes": 58,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3076,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2907,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3473,
+          "final_slots": 4
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "measured",
+      "slots": 2,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 976,
+      "probe_elapsed_s": 416.5516242472804,
+      "inclusive_elapsed_s": 418.11454983393196,
+      "probe_batches": 244,
+      "record_estimates": 488,
+      "nonzero_deltas": 0,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2110,
+          "final_slots": 2
+        },
+        {
+          "writes": 61,
+          "prunes": 59,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2199,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2404,
+          "final_slots": 2
+        },
+        {
+          "writes": 65,
+          "prunes": 63,
+          "discards": 0,
+          "peak_slots": 2,
+          "peak_bytes": 2826,
+          "final_slots": 2
+        }
+      ]
+    },
+    {
+      "adapter": "textworld",
+      "policy": "measured",
+      "slots": 4,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "sd": 0.0,
+      "paired": {
+        "none": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "utility": {
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "successes": 0,
+      "main_episodes": 4,
+      "probe_episodes": 1896,
+      "probe_elapsed_s": 726.6224674561527,
+      "inclusive_elapsed_s": 728.0511017920799,
+      "probe_batches": 237,
+      "record_estimates": 948,
+      "nonzero_deltas": 1,
+      "usage": [
+        {
+          "writes": 61,
+          "prunes": 57,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2791,
+          "final_slots": 4
+        },
+        {
+          "writes": 62,
+          "prunes": 58,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3076,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 2907,
+          "final_slots": 4
+        },
+        {
+          "writes": 65,
+          "prunes": 61,
+          "discards": 0,
+          "peak_slots": 4,
+          "peak_bytes": 3473,
+          "final_slots": 4
+        }
+      ]
+    }
+  ],
+  "planning": null,
+  "primary_contrasts": [],
+  "seed_costs": [
+    {
+      "seed": 63000,
+      "games": [
+        {
+          "path": "games/63000/tw-QJU6s1FeUqU5FBUvF0-house-GP-k3l0s2ypTdNvIxWG.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-k3l0s2ypTdNvIxWG.z8",
+            "sha256": "85685203e36d0d9a51482e974dddd7260e6fb8522ff48f341a1e12caebd73036",
+            "metadata_sha256": "746d5ed2af5a549bb32b2d34ef9d1af2f2b59b38803cc7225cc33ed2ba809890"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 2.4398247500066645,
+      "seed_elapsed_s": 315.34373945900006
+    },
+    {
+      "seed": 63001,
+      "games": [
+        {
+          "path": "games/63001/tw-QJU6s1FeUqU5FBUvF0-house-GP-ONaWc3JlUaZMTnly.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-ONaWc3JlUaZMTnly.z8",
+            "sha256": "4939dd619d95b72b03ca44072e7b4ba87721a80f6ac71be7053e677402728155",
+            "metadata_sha256": "8d7a3557c886d93b4d5351f0fe8f716f455462bf5db422a01ce25b2b6dfd7008"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.4646617499529384,
+      "seed_elapsed_s": 234.78278420795687
+    },
+    {
+      "seed": 63002,
+      "games": [
+        {
+          "path": "games/63002/tw-QJU6s1FeUqU5FBUvF0-house-GP-0o8yC7M2u2n2F7q2.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-0o8yC7M2u2n2F7q2.z8",
+            "sha256": "14de8e963baa7479ed4840acb2f3de726ea85fbba37ec8fa9bcfcc4154013b53",
+            "metadata_sha256": "13a739cd2ea59f4bee048b53b3c7d77daccb0b6a9f97a72ab8f9a5c5f52d78ed"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.324443582969252,
+      "seed_elapsed_s": 307.30896758299787
+    },
+    {
+      "seed": 63003,
+      "games": [
+        {
+          "path": "games/63003/tw-QJU6s1FeUqU5FBUvF0-house-GP-noq7ir36iJZ9FRXL.z8",
+          "identity": {
+            "file": "tw-QJU6s1FeUqU5FBUvF0-house-GP-noq7ir36iJZ9FRXL.z8",
+            "sha256": "db93df1e59c60b25447c38d7a24ac747a25eeaed1b8c61e30039c0f8c027f6ae",
+            "metadata_sha256": "68a76c6d4e24174efe5f37840d86e23ca1a8f6c168fddd0b47fc97a87714b261"
+          }
+        }
+      ],
+      "game_preparation_elapsed_s": 1.8871085830032825,
+      "seed_elapsed_s": 301.30364425003063
+    }
+  ]
+}

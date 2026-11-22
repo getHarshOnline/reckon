@@ -1,0 +1,24 @@
+{
+  "budget": {
+    "max_bytes": 50000,
+    "max_read_ops_per_window": null,
+    "max_slots": 16,
+    "max_tokens": null,
+    "max_write_ops_per_window": null,
+    "window_size": 100
+  },
+  "learn_utility": true,
+  "num_episodes": 1,
+  "policy_name": "FIFOPolicy",
+  "reset_memory": false,
+  "seed": 41,
+  "task": {
+    "feature_dim": 2,
+    "learning_rate": 0.1,
+    "num_tasks": 3,
+    "replay_fraction": 0.2,
+    "samples_per_task": 60,
+    "test_samples_per_task": 60
+  },
+  "task_name": "continual"
+}

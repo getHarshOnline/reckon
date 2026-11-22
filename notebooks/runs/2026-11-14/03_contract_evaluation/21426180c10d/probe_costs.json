@@ -1,0 +1,11 @@
+{
+  "base_episodes": 5,
+  "base_elapsed_s": 0.004004916991107166,
+  "probe_episodes": 220,
+  "probe_elapsed_s": 0.17079120798734948,
+  "total_episodes": 225,
+  "total_measured_s": 0.17479612497845665,
+  "probe_episode_fraction": 0.9777777777777777,
+  "probe_time_fraction": 0.9770880676468041,
+  "evaluation_calls": 14
+}

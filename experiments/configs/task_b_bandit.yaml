@@ -1,0 +1,18 @@
+# The task itself retires stale indicators; compare that separately from policy pruning.
+task: bandit
+description: Remember the hidden mode indicator when selecting an arm.
+environment:
+  num_arms: 5
+  num_modes: 3
+  mode_switch_interval: 50
+  indicator_probability: 0.2
+  reward_std: 0.1
+budget:
+  max_slots: 20
+  max_bytes: 10000
+retention_policy: utility
+experiment:
+  seed: 42
+  num_episodes: 10
+  reset_memory: false
+  learn_utility: true

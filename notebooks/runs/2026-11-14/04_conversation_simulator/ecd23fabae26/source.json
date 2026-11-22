@@ -1,0 +1,11 @@
+{
+  "run_mode": "demo",
+  "uncommitted_source": true,
+  "sha256": {
+    "04_agentic_conversation_simulator.ipynb": "4ab63245a2596148d338fea97b97e99e9d95a558d9431fe00a2df3e3641452d6",
+    "_utils/adapters/conversation.py": "a480b3f5e6a87c2f9659981389063cd09aeb1187422c450a2fbb7472b39286ca",
+    "_utils/adapters/ollama_client.py": "411e3915f27da6b61aaf041d1d203ea878a3255a6ff06413ac706e511afbb96e",
+    "_utils/adapters/tool_env.py": "0c668f7192fd80002c09c8b2f0ef7d6090fc404d2f7cb7d62427a3ca21accbbf",
+    "_utils/artifacts.py": "0f662e64b49896ac7acf7d2fcb28e6980b52165cdcf975d37892e7c651dd43be"
+  }
+}

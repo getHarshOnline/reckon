@@ -1,0 +1,37 @@
+# Tutor memory comparison
+
+This protocol fixes the next Tutor comparison before its new seed outcomes are inspected. It follows the [paired-input calibration](../../notebooks/runs/2026-11-15/tutor_paired_calibration/d1946209a918/summary.md), including its null and adverse findings. It tests the implemented retention policies on that one declared workload. The other native tasks and notebook adapters remain separate work; this result cannot establish the whole Reckon hypothesis.
+
+## Question and fixed inputs
+
+Does measured retention improve the mean fraction of misconceptions cleared over learned utility at two or four memory slots, and what does its measurement cost? The [configuration](../../notebooks/experiments/tutor_confirmation.json) retains six initially misunderstood concepts, six questions in one session, a 0.3 base hint success probability and a 0.2 remembered-hint boost. Each seed runs five episodes with carried memory and utility learning. Starting students and response randomness are paired independently of action choices.
+
+Compare no memory, full capacity, FIFO, LRU, seeded random, explicit importance, learned utility, Diversity and measured retention. Run the first two controls once per seed; run each limited policy at two and four slots. This gives 16 rows, each with 256 independent outer seeds and 1,280 main episodes: 20,480 main episodes altogether. Use seeds 20,000–20,255 exactly. Seeds 100–104 supplied exploratory findings; seed 105 is reserved for a runner check and excluded from inference. Do not change the workload or sample count after seeing confirmation outcomes.
+
+A Beta-posterior arm is omitted from this experiment. The endpoint is an episode's fraction cleared, and no additional posterior-based retention rule has been specified and implemented for it. Relabelling the existing measured or utility policy would add no distinct comparator.
+
+## Probe declaration and price
+
+At every measured-policy prune, test each retained record using 256 fixed paired trials, with one fresh Tutor episode in each arm. Copy the current memory into each trial, remove the named record only in the intervention arm, and use non-probing FIFO with utility learning inside both arms. This is a fresh-task experiment, not continuation of the live student's state. Keep the existing equal-weight mixture of utility and positive measured effect per byte; signed estimates remain in the raw evidence. Significance does not gate the ranking.
+
+Use a paired t test and Bonferroni correction of its p-values over the candidates at that one pruning decision, at family alpha 0.05. The stored probe intervals remain individual 95% t intervals; they are not adjusted for the candidate family. There are at most four retained candidates under these budgets. Sampling has no early stopping. The t test replaces the four-pair exploratory permutation test so this declared larger comparison can retain a useful inferential resolution without spending most of its time on permutation draws. Its interval and power assumptions remain explicit. The `n_permutations` field is retained by the common configuration but unused by the selected t test.
+
+For outer seed index `i`, start probe seeds at `10,000,000 + i * 1,000,000`; each subsequent pruning decision advances by 256. Candidate records and the two budgets share the same index-specific probe stream, but outer seeds use disjoint streams. At most 30 writes can occur in five six-question episodes, so the reservation cannot overlap the next outer seed. Probe seeds are disjoint from all main seeds.
+
+Retain every raw paired outcome, record snapshot, selected removal and cost in compressed per-seed result files. Report main and probe episodes, task and probe elapsed time, peak memory, writes and prunes separately. Total elapsed time includes measurement; it must not be presented as ordinary task time. Timing is an observation of this machine and run, not a universal performance claim.
+
+## Analysis fixed before the run
+
+The two primary contrasts are measured minus learned utility at two slots and at four slots. The unit is the outer seed's mean across its five carried episodes, not each episode or probe. Use two-sided paired t tests with Bonferroni-adjusted p-values and 97.5% intervals for each contrast, giving a family alpha of 0.05. Report all 16 policy means with sample spreads and descriptive 95% t intervals; those individual intervals do not supply simultaneous policy rankings. Retain the two primary raw paired vectors.
+
+A difference of 0.05 in the fraction cleared is an analyst-selected planning target: five percentage points. It is not Harsh's accepted threshold for a useful product or permission to promote a policy. With 256 outer seeds, a paired standard deviation of 0.25 and per-contrast alpha 0.025, the noncentral-t planning calculation gives power 0.8271 for a true difference of that size. With 256 probe pairs, paired standard deviation 0.20 and per-record alpha 0.0125 for four candidates, the corresponding planning power is 0.9303. These calculations assume independent normally distributed paired differences. Bounded, discrete simulation outcomes may depart from that approximation; larger variance reduces power. State observed spreads and interval widths alongside these assumptions, and do not substitute retrospective observed-effect power.
+
+The probe planning power refers to rejection at the corrected per-record threshold, not coverage of the stored pointwise intervals. The [runner](../../notebooks/experiments/tutor_confirmation.py) calculates those figures using SciPy's [noncentral t distribution](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.nct.html); the final contrast uses the [paired t test](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_rel.html). The run does not claim simultaneous error control over every adaptively reached pruning decision. Per-decision probe inference and the fixed outer policy comparison answer different questions.
+
+Report negative and null differences with the same prominence as positive ones. Failure to reject zero does not establish equivalence. A positive estimate alone does not establish a benefit of at least 0.05: compare the interval with both zero and the planning target. Even an interval wholly above the target leaves the measured policy's compute price and the workload's scope to assess.
+
+## Execution and interruption
+
+Review and commit this protocol, configuration and runner before starting the confirmation seeds. The runner records source and environment identities, copies its exact inputs, and writes each completed seed atomically. Resume only when those identities and the saved file hashes still match. Interruption may leave a partial run, which must remain labelled incomplete; it cannot supply the planned final test. Do not replace completed observations or add seeds to obtain a preferred result.
+
+Run `python notebooks/experiments/tutor_confirmation.py --plan` to inspect the settings and planning calculation without executing a task. The `--smoke OUTPUT_DIRECTORY` route runs only reserved seed 105 and checks result structure and accounting. Run `--run` after review to execute or resume the fixed confirmation. A source or configuration repair after confirmation starts needs a separately identified protocol and run; preserve the affected results and state the reason.

@@ -1,0 +1,13 @@
+{
+  "run_mode": "demo",
+  "uncommitted_source": false,
+  "sha256": {
+    "_utils/adapters/record_probe.py": "379c110e4f54b795a4e8e8fd492391d93575cbd4bef79f678ae2954b774ad73e",
+    "_utils/adapters/episode_memory.py": "2996af2ae212fb101a1892ab053cee4edfd27e29d2515128f06cb77df288eb90",
+    "04_agentic_conversation_simulator.ipynb": "5cdc3f1f4189f441f658ac7df05a7aed8c2052f2e23be951ab8f4737b435203f",
+    "_utils/adapters/conversation.py": "fd21368189b1e907139a0ecde40e8801b03a4a5fdd9368883c7ec55872b00c97",
+    "_utils/adapters/ollama_client.py": "411e3915f27da6b61aaf041d1d203ea878a3255a6ff06413ac706e511afbb96e",
+    "_utils/adapters/tool_env.py": "0c668f7192fd80002c09c8b2f0ef7d6090fc404d2f7cb7d62427a3ca21accbbf",
+    "_utils/artifacts.py": "0f662e64b49896ac7acf7d2fcb28e6980b52165cdcf975d37892e7c651dd43be"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "performance": {
+    "mean_accuracy": 0.8388888888888889,
+    "forgetting": 0.22499999999999998
+  },
+  "memory": {
+    "reward_per_slot": 0.11984126984126985,
+    "useful_memory_rate": 3.857142857142857
+  },
+  "causal": {
+    "causal_precision": 0.775
+  },
+  "raw_data": {
+    "reset_memory": false,
+    "learn_utility": true,
+    "episodes": [
+      {
+        "mean_accuracy": 0.8388888888888889,
+        "forgetting": 0.22499999999999998,
+        "total_writes": 7,
+        "total_reads": 27,
+        "accuracy_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.95,
+            1.0,
+            0.0
+          ],
+          [
+            0.55,
+            1.0,
+            0.9666666666666667
+          ]
+        ]
+      }
+    ],
+    "config": {
+      "num_tasks": 3,
+      "samples_per_task": 60
+    }
+  }
+}

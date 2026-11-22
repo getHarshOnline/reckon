@@ -1,0 +1,36 @@
+{
+  "notebook_name": "textworld_improving_removal_development",
+  "protocol": "docs/experiments/textworld-improving-removal-development.md",
+  "adapters": { "textworld": 30 },
+  "policies": [
+    "none",
+    "full",
+    "fifo",
+    "lru",
+    "random",
+    "importance",
+    "utility",
+    "diversity",
+    "measured",
+    "measured_improving"
+  ],
+  "budgets": [2, 4],
+  "seeds": [65000, 65001, 65002, 65003],
+  "smoke_seed": 64999,
+  "episodes_per_seed": 1,
+  "causal_weight": 0.5,
+  "reference_policy": "fifo",
+  "pairs_per_candidate": 1,
+  "descriptive_references": ["none", "utility", "fifo", "measured"],
+  "selection_rules": {
+    "measured": "retention-score",
+    "measured_improving": "improving-removal"
+  },
+  "inference": "four fresh development games; descriptive paired vectors only, no confirmation or adoption",
+  "run_mode": "demo",
+  "purpose": "selector_development",
+  "budget_interpretation": {
+    "2": "constrained control: goal plus two earlier action records cannot all be retained",
+    "4": "admits the three required records, with descriptions and inventory competing for slots"
+  }
+}

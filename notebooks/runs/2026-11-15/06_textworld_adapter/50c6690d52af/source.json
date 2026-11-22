@@ -1,0 +1,11 @@
+{
+  "run_mode": "demo",
+  "textworld_version": "1.7.0",
+  "uncommitted_source": true,
+  "sha256": {
+    "06_text_env_adapter_textworld.ipynb": "1bbd5d5a3d3f42ac01ff0e2b74ded7cf59a4dd50f813cb365207cbc35d870472",
+    "_utils/adapters/text_game.py": "65cc4147d9256fb00e0e1b21b4b364831e8de968368aa1f65025635596b32b5c",
+    "_utils/adapters/textworld_adapter.py": "373f2f09a94750281bb9c08b489c0d5de9a080cf487e4c790acedf1f2c07c2a3",
+    "_utils/artifacts.py": "0f662e64b49896ac7acf7d2fcb28e6980b52165cdcf975d37892e7c651dd43be"
+  }
+}

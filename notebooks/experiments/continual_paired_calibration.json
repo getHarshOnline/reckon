@@ -1,0 +1,48 @@
+{
+  "tasks": {
+    "continual": {
+      "num_tasks": 3,
+      "samples_per_task": 40,
+      "test_samples_per_task": 20
+    }
+  },
+  "policies": [
+    "none",
+    "full",
+    "fifo",
+    "lru",
+    "random",
+    "importance",
+    "utility",
+    "diversity",
+    "measured"
+  ],
+  "budgets": [1, 2],
+  "seeds": [
+    40000, 40001, 40002, 40003, 40004, 40005, 40006, 40007, 40008, 40009, 40010,
+    40011, 40012, 40013, 40014, 40015
+  ],
+  "episodes": 3,
+  "probe_seed_base": 3000000000,
+  "probe_seed_stride": 100000,
+  "retention_probe": {
+    "episodes_per_arm": 1,
+    "reference_policy": "fifo",
+    "sampling": {
+      "test_type": "permutation",
+      "n_trials": 4,
+      "min_trials": 4,
+      "max_trials": 4,
+      "n_permutations": 256,
+      "alpha": 0.05,
+      "delta_threshold": 0.05,
+      "fdr_method": "bonferroni",
+      "adaptive_sampling": false,
+      "early_stopping": false,
+      "seed": 1000000000
+    }
+  },
+  "notebook_name": "continual_paired_calibration",
+  "protocol": "docs/experiments/continual-paired-calibration.md",
+  "smoke_seed": 39999
+}

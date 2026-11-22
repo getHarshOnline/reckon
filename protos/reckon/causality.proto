@@ -1,0 +1,79 @@
+// Reckon Causality Schema
+// Historical wire messages for causal influence records; the laboratory's own model is in
+// src/reckon/core/causality.py
+syntax = "proto3";
+
+package reckon;
+
+option java_package = "com.rtepl.causality.reckon";
+option java_multiple_files = true;
+
+import "reckon/budget.proto";
+
+// Divergence measure for detecting causal influence
+enum DistinguishabilityMeasure {
+  DISTINGUISHABILITY_MEASURE_UNSPECIFIED = 0;
+  DISTINGUISHABILITY_MEASURE_TOTAL_VARIATION = 1;
+  DISTINGUISHABILITY_MEASURE_KL_DIVERGENCE = 2;
+  DISTINGUISHABILITY_MEASURE_HELLINGER = 3;
+}
+
+// A causal relation A ⪯_R B under resources R
+// Represents: varying A produces detectable change in stable records of B
+message CausalRelation {
+  // The upstream event identifier
+  string source = 1;
+  // The downstream event identifier
+  string target = 2;
+  // Resource constraints under which relation holds
+  ResourceVector resources = 3;
+  // Measured distinguishability D(P(y|do(A=1)), P(y|do(A=0)))
+  double distinguishability = 4;
+  // The divergence measure used
+  DistinguishabilityMeasure measure = 5;
+  // Threshold η for detectability
+  double threshold = 6;
+  // Timestamp when this relation was established
+  int64 timestamp = 7;
+  // Number of trials used to establish relation
+  int32 trial_count = 8;
+  // Confidence interval (if computed)
+  optional double confidence_lower = 9;
+  optional double confidence_upper = 10;
+}
+
+// Resource-indexed collection of direct influence records over events.
+// Stored observations do not imply reflexivity or transitivity.
+message DirectInfluenceRecords {
+  // Resource constraints indexing these records
+  ResourceVector resources = 1;
+  // Recorded direct influence relations
+  repeated CausalRelation relations = 2;
+  // Unique event identifiers
+  repeated string events = 3;
+}
+
+// Query for causal relations
+message CausalQuery {
+  // Find relations with this source
+  optional string source = 1;
+  // Find relations with this target
+  optional string target = 2;
+  // Minimum distinguishability threshold
+  optional double min_distinguishability = 3;
+  // Only relations established after this timestamp
+  optional int64 after_timestamp = 4;
+}
+
+// Result of causal analysis
+message CausalAnalysisResult {
+  // Events that are upstream (cause) of the target
+  repeated string upstream_events = 1;
+  // Events that are downstream (effect) of the source
+  repeated string downstream_events = 2;
+  // All relations matching the query
+  repeated CausalRelation matching_relations = 3;
+  // Summary statistics
+  double mean_distinguishability = 4;
+  int32 total_relations = 5;
+}

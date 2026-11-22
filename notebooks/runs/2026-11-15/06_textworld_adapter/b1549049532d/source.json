@@ -1,0 +1,13 @@
+{
+  "run_mode": "demo",
+  "textworld_version": "1.7.0",
+  "uncommitted_source": false,
+  "sha256": {
+    "_utils/adapters/record_probe.py": "379c110e4f54b795a4e8e8fd492391d93575cbd4bef79f678ae2954b774ad73e",
+    "_utils/adapters/episode_memory.py": "2996af2ae212fb101a1892ab053cee4edfd27e29d2515128f06cb77df288eb90",
+    "06_text_env_adapter_textworld.ipynb": "e4043603473848386dd2751e4c406a6ce2eb1f37538b700b55f23c3935d7510b",
+    "_utils/adapters/text_game.py": "5a52821b361d4c7f8d125d9d0c70f45ea8aa01492b93ce2a733c9d7b44d588a1",
+    "_utils/adapters/textworld_adapter.py": "373f2f09a94750281bb9c08b489c0d5de9a080cf487e4c790acedf1f2c07c2a3",
+    "_utils/artifacts.py": "0f662e64b49896ac7acf7d2fcb28e6980b52165cdcf975d37892e7c651dd43be"
+  }
+}

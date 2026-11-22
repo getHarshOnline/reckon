@@ -1,0 +1,40 @@
+{
+  "config_id": "ff22a70d65aad1f87c0dfef2bf4e48b64eca1398662c92f3b280f816dcb45376",
+  "notebook_name": "replay-budget-comparison",
+  "task_name": "continual",
+  "started_at_ms": 1794734465815,
+  "policy_name": "FIFOPolicy",
+  "num_episodes": 1,
+  "budget_slots": 16,
+  "config": {
+    "task_name": "continual",
+    "task": {
+      "num_tasks": 3,
+      "samples_per_task": 60,
+      "test_samples_per_task": 60,
+      "feature_dim": 2,
+      "replay_fraction": 0.2,
+      "learning_rate": 0.1
+    },
+    "budget": {
+      "max_slots": 16,
+      "max_bytes": 50000,
+      "max_tokens": null,
+      "max_write_ops_per_window": null,
+      "max_read_ops_per_window": null,
+      "window_size": 100
+    },
+    "policy_name": "FIFOPolicy",
+    "seed": 42,
+    "num_episodes": 1,
+    "reset_memory": false,
+    "learn_utility": true
+  },
+  "metrics": {
+    "mean_accuracy": 0.7999999999999999,
+    "forgetting": 0.3,
+    "total_writes": 8,
+    "total_reads": 11
+  },
+  "wall_time_ms": 4.382500017527491
+}

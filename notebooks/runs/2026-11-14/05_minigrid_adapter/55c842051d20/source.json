@@ -1,0 +1,15 @@
+{
+  "run_mode": "paper",
+  "backend_versions": {
+    "minigrid": "3.2.0",
+    "gymnasium": "1.4.0",
+    "pygame-ce": "2.5.6"
+  },
+  "uncommitted_source": true,
+  "sha256": {
+    "05_rl_env_adapter_minigrid.ipynb": "f3b634a845bfe6c67c1244d98abb959057161b045321d3f2df0e85fa2aae3bf9",
+    "_utils/adapters/memory_maze.py": "e251c6a29f0b4878bbf8e788ab71d8b5dad7de763e79237166fc252c4e85a280",
+    "_utils/adapters/minigrid_adapter.py": "066ece85f802ad032fa5b9802b80582647ff01248fd0d4f1647dd000542dbb6f",
+    "_utils/artifacts.py": "0f662e64b49896ac7acf7d2fcb28e6980b52165cdcf975d37892e7c651dd43be"
+  }
+}

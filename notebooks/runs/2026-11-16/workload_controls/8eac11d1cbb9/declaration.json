@@ -1,0 +1,47 @@
+{
+  "tasks": {
+    "keydoor": {},
+    "bandit": {
+      "num_arms": 2,
+      "num_modes": 2,
+      "mode_switch_interval": 25,
+      "indicator_probability": 0.1
+    }
+  },
+  "policies": [
+    "none",
+    "full",
+    "fifo",
+    "lru",
+    "random",
+    "importance",
+    "utility",
+    "diversity",
+    "measured"
+  ],
+  "budgets": [1, 2],
+  "seeds": [
+    30000, 30001, 30002, 30003, 30004, 30005, 30006, 30007, 30008, 30009, 30010,
+    30011, 30012, 30013, 30014, 30015
+  ],
+  "episodes": 3,
+  "probe_seed_base": 1000000000,
+  "probe_seed_stride": 100000,
+  "retention_probe": {
+    "episodes_per_arm": 1,
+    "reference_policy": "fifo",
+    "sampling": {
+      "test_type": "permutation",
+      "n_trials": 4,
+      "min_trials": 4,
+      "max_trials": 4,
+      "n_permutations": 256,
+      "alpha": 0.05,
+      "delta_threshold": 0.05,
+      "fdr_method": "bonferroni",
+      "adaptive_sampling": false,
+      "early_stopping": false,
+      "seed": 1000000000
+    }
+  }
+}

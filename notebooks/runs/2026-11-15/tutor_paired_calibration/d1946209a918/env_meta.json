@@ -1,0 +1,14 @@
+{
+  "python": "3.13.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "dependencies": {
+    "numpy": "2.4.2",
+    "scipy": "1.17.0",
+    "PyYAML": "6.0.3",
+    "reckon": "1.0.0"
+  },
+  "extension_sha256": "834c730297e04e2f72fed1a745a21a3e523ab506b15cefc40f65525ae092143c",
+  "source_commit": "b9c28099a60f408d05af167610d898d7b6b5be1c",
+  "uncommitted_source": false,
+  "runner_sha256": "ce5f715758e408934566b3a0cda3b20cf416fbf25e9dd50f5f34a4d99add280c"
+}

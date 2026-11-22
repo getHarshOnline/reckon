@@ -1,0 +1,52 @@
+{
+  "name": "@rtepl/reckon-viz",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reckon's debugger and the chart components it is built from, for inspecting a run's records and events",
+  "author": "Harsh Joshi <hi@causality.in>",
+  "license": "Apache-2.0",
+  "homepage": "https://causality.in/reckon",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --filter @rtepl/reckon-debugger dev",
+    "build": "pnpm -r build",
+    "build:components": "pnpm --filter @rtepl/reckon-components build",
+    "build:debugger": "pnpm --filter @rtepl/reckon-debugger build",
+    "preview": "pnpm --filter @rtepl/reckon-debugger preview",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm test:components && pnpm test:evidence && pnpm test:frontier && pnpm test:record-scores",
+    "clean": "pnpm -r clean && rm -rf node_modules",
+    "proto:gen": "cd ../protos && buf generate",
+    "test:browser": "node tests/kernel-browser.mjs",
+    "test:components": "pnpm --filter @rtepl/reckon-components test",
+    "test:evidence": "node tests/pair-evidence-browser.mjs",
+    "test:frontier": "node tests/frontier-axes-browser.mjs",
+    "test:record-scores": "node tests/record-scores-browser.mjs",
+    "test:record-wire": "node scripts/generate-records.mjs && node tests/record-wire-browser.mjs",
+    "generate:records": "node scripts/generate-records.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "1.58.2",
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getHarshOnline/reckon"
+  },
+  "keywords": [
+    "memory",
+    "debugger",
+    "visualization",
+    "timeline",
+    "causal",
+    "agent"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "dependencies": {
+    "@protobuf-ts/runtime": "2.11.1"
+  }
+}

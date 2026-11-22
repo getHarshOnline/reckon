@@ -1,0 +1,31 @@
+# Continual retention confirmation
+
+This protocol fixes the confirmation after the [paired-input calibration](../../notebooks/runs/2026-11-16/continual_paired_calibration/53df3560dc14/summary.md). That calibration found small positive, negative and zero differences from learned utility, and a higher mean for no memory than for every retained-memory arm. Preserve those findings. The question is whether the implemented measured policy improves this workload relative to learned utility and to using no memory, at its full measurement price. It does not select a policy for adoption.
+
+## Fixed workload and sample
+
+The [configuration](../../notebooks/experiments/continual_confirmation.json) keeps three tasks, 40 training samples and 20 test samples per task, two features, replay probability 0.2 and learning rate 0.1. Each seed runs three episodes with carried memory and utility learning. Data and replay opportunities remain paired through the repaired streams. Use all 64 fresh outer seeds 50,000–50,063 exactly, with 49,999 reserved for the runner check and excluded from the confirmation. Do not change the task, policies or sample after observing outcomes.
+
+Run no memory and full capacity once per seed, and FIFO, LRU, seeded random, explicit importance, learned utility, Diversity and measured retention at one and two slots, without a byte cap. This gives 16 rows, 1,024 seed runs and 3,072 main episodes. One slot is a structural control: admission has only one retained candidate to remove, so there is no ranking choice to compare. The two primary contrasts are measured minus learned utility at two slots, and measured at two slots minus no memory. All other comparisons are descriptive; full capacity is a reference with cost, not an accuracy upper bound.
+
+## Measured policy and probe price
+
+At every measured pruning decision, test each current record in 64 fixed paired trials, using one fresh Continual episode in each arm. Both arms copy current memory; only the intervention removes the named record. Both use non-probing FIFO, carried memory and utility learning. The retained example can be read from the beginning of the episode. This remains a fresh-task comparison, not continuation of the live classifier. The equal-weight mixture of utility and positive intervention delta per byte is unchanged, and significance does not gate that ranking. Save every signed estimate and both outcomes.
+
+Use paired t tests and Bonferroni correction across the candidates at each pruning decision, at family alpha 0.05. There are at most two candidates. Stored probe intervals remain individual 95% intervals, not family-adjusted intervals. Use no early stopping or adaptive sampling. The configuration retains the shared `n_permutations` field, but the selected t test does not use it. The larger fixed pair count and t test replace the calibration's four-pair diagnostic; the workload and retention formula remain unchanged.
+
+For outer seed index `i`, start probe seeds at `4,000,000,000 + i * 100,000`. Each decision advances by 64. At most 360 writes can occur in the three episodes, so at most 23,040 seed positions are needed per outer block. Both budgets share their assigned stream. The reserved runner check uses its separate diagnostic stream beginning at 2,000,000,000. Confirmation probe and main seeds are disjoint from the calibration and earlier experiments; smoke observations never enter inference.
+
+Report main and probe episodes, writes, task and policy removals, sampled store peaks, actual initial-record reads, signed estimates, and inclusive and probe elapsed time. Inclusive time already includes measurement. Keep complete raw trials in compressed seed files; neither a low-cost empty probe nor a discarded adverse estimate may masquerade as the measured policy's result.
+
+## Planned inference
+
+The unit is the outer seed's mean final accuracy over its three episodes. Use two-sided paired t tests for the two declared contrasts, Bonferroni-adjusted p-values and individual 97.5% intervals, giving family alpha 0.05. Report all 16 row means and sample standard deviations and retain both primary difference vectors. Equal observed values at one slot describe the control; no extra significance test is assigned to them.
+
+The planning effect is 0.05 accuracy, five percentage points, with an assumed paired standard deviation of 0.10. This is an analyst-selected target, not Harsh's adoption threshold. At 64 independent pairs and per-comparison alpha 0.025, the noncentral-t calculation gives power 0.953329 under independent normal differences. The same conservative two-candidate calculation applies to the fixed 64-pair probes. The calibration's observed outer paired SD was 0.023384 and its largest four-pair probe SD was 0.055277; neither is a bound on future variance. Report actual spreads and intervals, and preserve this qualification if differences are discrete, non-normal or more variable than assumed. Do not replace planning power with a retrospective observed-effect calculation.
+
+Compare intervals with both zero and the positive 0.05 target. Report a negative difference from no memory as prominently as a positive difference from utility. Failure to reject zero is not equivalence; a statistically detectable small gain is not evidence that its probe price is justified. The family adjustment covers these two outer contrasts and, separately, each probe decision's candidates, not every adaptively reached decision in the run. If all paired differences are equal, report zero sample variance and the degenerate interval explicitly.
+
+## Execution and interruption
+
+Use `python notebooks/experiments/workload_controls.py --config notebooks/experiments/continual_confirmation.json --plan` to inspect the declaration and planning calculation without executing a task. Commit the protocol, configuration and runner before running the reserved `--smoke OUTPUT_DIRECTORY`, then `--run`. The runner records source, extension, lockfile and dependency identities, writes complete per-seed raw results and verifies that its inputs stayed unchanged before marking completion. It refuses to overwrite an existing run. Preserve any interrupted run as incomplete and reconcile its completed seeds before continuing; no optional stopping, replacement outcomes or added seeds are permitted.

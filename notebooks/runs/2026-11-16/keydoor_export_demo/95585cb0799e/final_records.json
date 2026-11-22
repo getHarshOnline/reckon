@@ -1,0 +1,39 @@
+[
+  {
+    "causal_score": {
+      "ablation_delta": null,
+      "counterfactual_delta": null,
+      "influence_proxy": null,
+      "last_evaluated": -1
+    },
+    "cost": {
+      "bytes": 21,
+      "slots": 1
+    },
+    "episode_id": "keydoor_ep2",
+    "id": "795ba66d-e0d1-44d8-868a-91e56b38011b",
+    "metadata": {},
+    "payload": {
+      "data": {
+        "key_color": "blue"
+      },
+      "type": "cue"
+    },
+    "provenance": {
+      "hash": "15c3a0f32c61c1fd",
+      "input_ids": [],
+      "source_op": "store_cue"
+    },
+    "tags": [
+      "key",
+      "color"
+    ],
+    "timestamp": 33,
+    "utility": {
+      "last_used": 35,
+      "uncertainty": 1.0,
+      "use_count": 1,
+      "value": 0.1
+    }
+  }
+]
