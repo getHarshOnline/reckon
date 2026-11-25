@@ -22,7 +22,7 @@ Kernel API documentation belongs in Rust library comments, built with `cargo doc
 
 ## Protocol and HTTP references
 
-Install the `proto` and `viz` extras in the selected environment. The [reference exporter](../../tools/export_reference.py) compiles all `.proto` sources through the pinned `grpcio-tools` compiler and renders its descriptors as Markdown. It preserves qualified type names, field numbers, map types, explicit optional presence, oneof membership, enum values, RPC streaming directions and source comments. Laboratory messages in `reckon` and daemon messages in `reckon.core.v1` remain separate. The exporter does not regenerate Python or TypeScript bindings.
+Install the `proto` and `viz` extras in the selected environment. The [reference exporter](../../tools/export_reference.py) compiles all `.proto` sources through the pinned `grpcio-tools` compiler and renders its descriptors as Markdown. It preserves qualified type names, field numbers, map types, explicit optional presence, oneof membership, enum values, RPC streaming directions and the prose of source comments. The decorative comment rulers stay in the source. Laboratory messages in `reckon` and daemon messages in `reckon.core.v1` remain separate. The exporter does not regenerate Python or TypeScript bindings.
 
 ```bash
 python tools/export_reference.py protobuf --output build/protobuf-reference/index.md

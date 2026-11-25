@@ -1,4 +1,6 @@
-# The Reckon laboratory manual
+# Reckon
+
+<a id="the-reckon-laboratory-manual"></a>
 
 Use this manual to build the `reckon` Python package, integrate its memory manager or send a run to the debugger. The build gives you a Python extension backed by Rust. Your task supplies the observations and outcomes.
 

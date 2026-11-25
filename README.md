@@ -1,4 +1,6 @@
-# Reckon laboratory
+# Reckon
+
+<a id="reckon-laboratory"></a>
 
 Reckon, a laboratory for causal records under resource budgets, measures what an agent with limited memory should keep: what changes outcomes for what it costs, with the uncertainty shown. This repository holds its working laboratory: the Python package and command `reckon`, the Rust crate `reckon-kernel`, benchmark tasks and a debugger. Reckon belongs to [Causality](https://causality.in), a research programme of RawThoughts Enterprises Private Limited, and Harsh Joshi is its author.
 
